@@ -1,0 +1,3 @@
+/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/CMakeFiles/SenicSpotManagement.dir
