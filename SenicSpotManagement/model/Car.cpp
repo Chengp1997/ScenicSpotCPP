@@ -8,9 +8,8 @@
 
 Car::Car() {};
 
-Car::Car(string carId, string startTime) {
+Car::Car(string carId) {
     this->carId = carId;
-    this->startTime = startTime;
     this->status = OUTLOT;
 }
 

@@ -16,7 +16,7 @@ private:
 public:
 
     Car();
-    Car(string carId, string startTime);
+    Car(string carId);
 
     bool equals(string carId);
 
