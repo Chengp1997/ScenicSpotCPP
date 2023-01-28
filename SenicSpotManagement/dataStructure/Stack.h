@@ -26,6 +26,8 @@ public:
     int size();
     bool isEmpty();
     bool isFull();
+
+    void displayAll();
 };
 
 template<class T>
@@ -83,6 +85,15 @@ bool Stack<T>::isFull() {
 template<class T>
 int Stack<T>::size() {
     return top+1;
+}
+
+template<class T>
+void Stack<T>::displayAll() {
+    for(int i=0;i<=top;i++){
+        cout<< data[i]<<" ";
+        if(i!=0 && i%10==0) cout<<endl;
+    }
+    cout<<endl;
 }
 
 

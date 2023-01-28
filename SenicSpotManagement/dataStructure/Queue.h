@@ -27,6 +27,8 @@ public:
     bool isEmpty();
     bool isFull();
 
+    void displayAll();
+
 };
 
 template<class T>
@@ -89,6 +91,15 @@ bool Queue<T>::isEmpty() {
 template<class T>
 bool Queue<T>::isFull() {
     return size() == capacity;
+}
+
+template<class T>
+void Queue<T>::displayAll() {
+    for(int i=0;i<count;i++){
+        cout<<data[i]<<" ";
+        if(i!=0 && i%10==0) cout<<endl;
+    }
+    cout<<endl;
 }
 
 #endif //SENICSPOTMANAGEMENT_QUEUE_H
