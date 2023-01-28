@@ -12,14 +12,14 @@ using namespace std;
 template<class T>
 class Stack {
 private:
-    T *data;
-    int top;
-    int capacity;// how
+    T *data; //array to store data
+    int top; //top of the stack
+    int capacity;//the max size of the stack
 public:
     Stack(int size = SIZE);
     ~Stack();
 
-    void push(T data);
+    void push(T val);
     T pop();
     T peek();
 
@@ -44,6 +44,7 @@ template<class T>
 void Stack<T>::push(T val) {
     if (isFull()){
         cout << "stack is full!"<<endl;
+        throw runtime_error("Error: stack is Full");
     }else{
         data[++top] = val;
     }
