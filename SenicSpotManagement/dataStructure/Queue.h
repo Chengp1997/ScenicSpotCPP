@@ -4,11 +4,91 @@
 
 #ifndef SENICSPOTMANAGEMENT_QUEUE_H
 #define SENICSPOTMANAGEMENT_QUEUE_H
+#include "iostream"
+using namespace std;
+#define SIZE 1000
 
-
+template<class T>
 class Queue {
-    
+private:
+    T* data;//array to store the
+    int capacity; //max size of the queue
+    int front; //front pointer of the first element in the queue
+    int rear; //rear pointer of the last element in the queue
+    int count; //size of the queue
+public:
+    Queue(int size = SIZE);
+    ~Queue();
+
+    void offer(T val);
+    T poll();
+    T peek();
+    int size();
+    bool isEmpty();
+    bool isFull();
+
 };
 
+template<class T>
+Queue<T>::Queue(int size) {
+    data = new T[size];
+    capacity = size;
+    front = 0;
+    rear = -1;
+    count = 0;
+}
+
+template<class T>
+Queue<T>::~Queue<T>() {
+    delete[] data;
+}
+
+template<class T>
+void Queue<T>::offer(T val) {
+    if (isFull()){
+        cout << "queue is full!"<<endl;
+        throw runtime_error("Error: queue is Full");
+    }
+
+    rear  = (rear+1)%capacity;
+    data[rear] = val;
+    count++;
+}
+
+template<class T>
+T Queue<T>::poll() {
+    if (isEmpty()){
+        cout << "queue is empty!"<<endl;
+        throw runtime_error("Failed: queue is empty");
+    }
+    T toReturn = data[front];
+    front = (front + 1)%capacity;
+    count --;
+    return toReturn;
+}
+
+template<class T>
+T Queue<T>::peek() {
+    if (isEmpty()){
+        cout << "queue is empty!"<<endl;
+        throw runtime_error("Failed: queue is empty");
+    }
+    return data[front];
+}
+
+template<class T>
+int Queue<T>::size() {
+    return count;
+}
+
+template<class T>
+bool Queue<T>::isEmpty() {
+    return size()==0;
+}
+
+template<class T>
+bool Queue<T>::isFull() {
+    return size() == capacity;
+}
 
 #endif //SENICSPOTMANAGEMENT_QUEUE_H
