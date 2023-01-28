@@ -44,6 +44,8 @@ public:
     void remove(int index);
     int length();
     void displayAll();
+
+    bool isEmpty();
 };
 
 template<class T>
@@ -142,5 +144,8 @@ void LinkedList<T>::displayAll() {
     }
     cout<< endl;
 }
+
+template<class T>
+bool LinkedList<T>::isEmpty() {return size==0;}
 
 #endif //SENICSPOTMANAGEMENT_LINKEDLIST_H
