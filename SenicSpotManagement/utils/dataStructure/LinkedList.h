@@ -37,7 +37,8 @@ public:
     ~LinkedList(){clear();}
     void clear();
 
-    T get(int index);
+    Node<T>* find(int index);
+    T* get(int index);
     void addFront(T val);
     void addTail(T val);
     void add(int index, T val);
@@ -61,13 +62,20 @@ void LinkedList<T>::clear() {
 }
 
 template<class T>
-T LinkedList<T>::get(int index) {
+Node<T> *LinkedList<T>::find(int index) {
     if (index < 0 || index>=size)return NULL;
     Node<T>* current = head;
     for(int i=0;i<index;i++){
         current = current->next;
     }
     return current;
+}
+
+template<class T>
+T* LinkedList<T>::get(int index) {
+    Node<T> * p = find(index);
+    if (p == NULL) return NULL;
+    return &(p->data);
 }
 
 template<class T>
@@ -149,5 +157,6 @@ void LinkedList<T>::displayAll() {
 
 template<class T>
 bool LinkedList<T>::isEmpty() {return size==0;}
+
 
 #endif //SENICSPOTMANAGEMENT_LINKEDLIST_H
