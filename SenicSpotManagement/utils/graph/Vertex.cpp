@@ -3,3 +3,7 @@
 //
 
 #include "Vertex.h"
+
+LinkedList<Edge> Vertex::getEdges() {
+    return edgeList;
+}

@@ -4,6 +4,8 @@
 
 #ifndef SENICSPOTMANAGEMENT_LINKEDLIST_H
 #define SENICSPOTMANAGEMENT_LINKEDLIST_H
+#include "iostream"
+using namespace std;
 
 template<class T>
 struct Node {

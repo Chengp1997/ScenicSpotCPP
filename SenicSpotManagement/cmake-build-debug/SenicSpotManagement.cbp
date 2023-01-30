@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug"/>
+				<Option working_dir="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug"/>
+				<Option working_dir="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug"/>
+				<Option working_dir="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SenicSpotManagement">
-				<Option output="/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/SenicSpotManagement" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug"/>
+				<Option output="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/SenicSpotManagement" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 SenicSpotManagement"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 SenicSpotManagement"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SenicSpotManagement/fast">
-				<Option output="/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/SenicSpotManagement" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug"/>
+				<Option output="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/SenicSpotManagement" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,71 +73,89 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 SenicSpotManagement/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 SenicSpotManagement/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/dataStructure/DoubleLinkedList.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/app/Menu.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/dataStructure/DoubleLinkedList.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/app/Menu.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/dataStructure/LinkedListNode.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/app/main.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/dataStructure/LinkedListNode.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/parking/Car.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/dataStructure/Node.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/parking/Car.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/dataStructure/Node.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/parking/ParkingLot.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/dataStructure/Queue.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/parking/ParkingLot.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/dataStructure/Queue.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/Graph.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/main.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/Graph.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/model/Edge.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotEdge.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/model/Edge.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotEdge.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/model/Graph.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotVertex.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/model/Graph.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotVertex.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/model/Vertex.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/common/FileProcessor.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/model/Vertex.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/common/FileProcessor.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/parking/Car.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/common/Utils.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/parking/Car.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/common/Utils.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/parking/ParkingLot.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/dataStructure/HashMap.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/parking/ParkingLot.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/dataStructure/LinkedList.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/CLionProjects/SenicSpotManagement/CMakeLists.txt">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/dataStructure/Queue.h">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/dataStructure/Stack.h">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/graph/Edge.cpp">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/graph/Edge.h">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/graph/Vertex.cpp">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/graph/Vertex.h">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

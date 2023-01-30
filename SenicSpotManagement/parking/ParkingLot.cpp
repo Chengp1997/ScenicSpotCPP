@@ -3,64 +3,59 @@
 //
 
 #include "ParkingLot.h"
-#include "iostream"
 
 ParkingLot::ParkingLot() {
     this->size = 10;
 }
 ParkingLot::ParkingLot(int size) { this->size = size;}
 
-void ParkingLot::park(string carId, string arriveTime) {
-    Car toEnter(carId, arriveTime);
-    Car currCar = toEnter;
-        // check if already exist
+void ParkingLot::park(string carId) {
+    // check if already exist
     auto iter = record.find(carId);
-    if (record.find(carId)==record.end()){ //already exist
+    if ( iter!=record.end()){ //already exist
         if(iter->second.getStatus() == Car::INLOT){//in parking lot
             cout<< "already in lot -- error input"<< endl;
             return;
         }
     }
 
-    record.insert(std::make_pair(carId, currCar));
-    //not exist, input the car
+    Car toEnter(carId);
+//    Car currCar = toEnter;
+    //not in parking lot, enter!
     for(int i=0;i<parkingSpace.size();i++){
         //if parking lot is full
         if (parkingSpace.size() == this->size){
+            toEnter.setStatus(Car::WAITING);
+            waitingLine.offer(toEnter);
             cout<< "******Parking Lot is Full, go to waiting line****"<<endl;
-            waitingLine.push(toEnter);
-
+            cout<< "******Car"<<carId<<" entering the waiting line***"<<endl;
         }else{
-            // get curr time 之后给分出来 太他妈丑了
-            time_t rawtime;
-            time(&rawtime);
-            currCar.setStartTime(ctime(&rawtime));
-            //
-            parkingSpace.push(currCar);
-            cout << "******New car" + carId + "entered****" << endl;
+            toEnter.setStartTime(Utils::getCurrentTime());
+            parkingSpace.push(toEnter);
+            cout << "******New car" + carId + "entered parking lot****" << endl;
         }
     }
+    //record
+    record.insert(std::make_pair(carId, toEnter));
 }
 
-void ParkingLot::leave(string carId, string leaveTime) {
-    //find already exists id
-
+void ParkingLot::leave(string carId) {
+    //check if exist
     auto iter = record.find(carId);
-    Car currCar = iter->second;
+    if ( iter!=record.end()){ //exist
+        Car toGO = iter->second;
+        //in parking lot
 
-                  // if the car doesn't exist
-    if (record.find(carId) != record.end())
-    {
-        cout<<"Invalid Car ID, Police on the way"<<endl;
     }
-    time_t rawtime;
-    time(&rawtime);
-    currCar.setStatus(Car::INLOT); // gone status
-    currCar.setEndTime(ctime(&rawtime));
-    parkingSpace.pop();
+
+    cout<< "*******error input , no this car****"<<endl;
+
 }
 
 void ParkingLot::showParkingLot() {
-
+    cout<< "******showing current status*********"<<endl;
+    cout<< "***parking lot length: "<< parkingSpace.size()<<endl;
+    cout<< "***waiting line length: "<< waitingLine.size()<<endl;
+    cout<< "***buffer length: "<< bufferStack.size()<<endl;
 }
 

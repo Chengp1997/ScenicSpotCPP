@@ -1,0 +1,17 @@
+Acadia  Arches  9
+Acadia  DeathValley  8
+Arches  GrandCanyon  7
+Arches  JoshuaTree  6
+DeathValley  MammothCave  4
+DeathValley  MesaVerde  5
+Glacier  GrandCanyon  11
+Glacier  JoshuaTree  3
+Glacier  Redwood  15
+Glacier  Yosemite  16
+GrandCanyon  Olympic  10
+MammothCave  MesaVerde  7
+MammothCave  Shenandoah  20
+MesaVerde  Yellowstone  20
+Olympic  Redwood  9
+Redwood  Yellowstone  10
+Shenandoah  Yellowstone  17

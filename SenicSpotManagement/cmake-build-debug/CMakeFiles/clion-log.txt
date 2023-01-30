@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/chengeping/CLionProjects/SenicSpotManagement
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug
+-- Build files have been written to: /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug

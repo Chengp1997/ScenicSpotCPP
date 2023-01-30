@@ -4,10 +4,16 @@
 
 #ifndef SENICSPOTMANAGEMENT_VERTEX_H
 #define SENICSPOTMANAGEMENT_VERTEX_H
+#include "../dataStructure/LinkedList.h"
 
-
+class Edge;
 class Vertex {
+private:
+    LinkedList<Edge> edgeList;
+public:
+    Vertex()= default;
 
+    LinkedList<Edge> getEdges();
 };
 
 

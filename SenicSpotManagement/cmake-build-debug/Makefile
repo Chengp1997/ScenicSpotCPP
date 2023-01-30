@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/chengeping/CLionProjects/SenicSpotManagement
+CMAKE_SOURCE_DIR = /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/CMakeFiles /Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengeping/CLionProjects/SenicSpotManagement/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,197 +129,53 @@ SenicSpotManagement/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/build
 .PHONY : SenicSpotManagement/fast
 
-dataStructure/DoubleLinkedList.o: dataStructure/DoubleLinkedList.cpp.o
-.PHONY : dataStructure/DoubleLinkedList.o
+app/Menu.o: app/Menu.cpp.o
+.PHONY : app/Menu.o
 
 # target to build an object file
-dataStructure/DoubleLinkedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/DoubleLinkedList.cpp.o
-.PHONY : dataStructure/DoubleLinkedList.cpp.o
+app/Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.o
+.PHONY : app/Menu.cpp.o
 
-dataStructure/DoubleLinkedList.i: dataStructure/DoubleLinkedList.cpp.i
-.PHONY : dataStructure/DoubleLinkedList.i
+app/Menu.i: app/Menu.cpp.i
+.PHONY : app/Menu.i
 
 # target to preprocess a source file
-dataStructure/DoubleLinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/DoubleLinkedList.cpp.i
-.PHONY : dataStructure/DoubleLinkedList.cpp.i
+app/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.i
+.PHONY : app/Menu.cpp.i
 
-dataStructure/DoubleLinkedList.s: dataStructure/DoubleLinkedList.cpp.s
-.PHONY : dataStructure/DoubleLinkedList.s
+app/Menu.s: app/Menu.cpp.s
+.PHONY : app/Menu.s
 
 # target to generate assembly for a file
-dataStructure/DoubleLinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/DoubleLinkedList.cpp.s
-.PHONY : dataStructure/DoubleLinkedList.cpp.s
+app/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.s
+.PHONY : app/Menu.cpp.s
 
-dataStructure/LinkedListNode.o: dataStructure/LinkedListNode.cpp.o
-.PHONY : dataStructure/LinkedListNode.o
+app/main.o: app/main.cpp.o
+.PHONY : app/main.o
 
 # target to build an object file
-dataStructure/LinkedListNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/LinkedListNode.cpp.o
-.PHONY : dataStructure/LinkedListNode.cpp.o
+app/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/app/main.cpp.o
+.PHONY : app/main.cpp.o
 
-dataStructure/LinkedListNode.i: dataStructure/LinkedListNode.cpp.i
-.PHONY : dataStructure/LinkedListNode.i
-
-# target to preprocess a source file
-dataStructure/LinkedListNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/LinkedListNode.cpp.i
-.PHONY : dataStructure/LinkedListNode.cpp.i
-
-dataStructure/LinkedListNode.s: dataStructure/LinkedListNode.cpp.s
-.PHONY : dataStructure/LinkedListNode.s
-
-# target to generate assembly for a file
-dataStructure/LinkedListNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/LinkedListNode.cpp.s
-.PHONY : dataStructure/LinkedListNode.cpp.s
-
-dataStructure/Node.o: dataStructure/Node.cpp.o
-.PHONY : dataStructure/Node.o
-
-# target to build an object file
-dataStructure/Node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/Node.cpp.o
-.PHONY : dataStructure/Node.cpp.o
-
-dataStructure/Node.i: dataStructure/Node.cpp.i
-.PHONY : dataStructure/Node.i
+app/main.i: app/main.cpp.i
+.PHONY : app/main.i
 
 # target to preprocess a source file
-dataStructure/Node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/Node.cpp.i
-.PHONY : dataStructure/Node.cpp.i
+app/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/app/main.cpp.i
+.PHONY : app/main.cpp.i
 
-dataStructure/Node.s: dataStructure/Node.cpp.s
-.PHONY : dataStructure/Node.s
-
-# target to generate assembly for a file
-dataStructure/Node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/Node.cpp.s
-.PHONY : dataStructure/Node.cpp.s
-
-dataStructure/Queue.o: dataStructure/Queue.cpp.o
-.PHONY : dataStructure/Queue.o
-
-# target to build an object file
-dataStructure/Queue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/Queue.cpp.o
-.PHONY : dataStructure/Queue.cpp.o
-
-dataStructure/Queue.i: dataStructure/Queue.cpp.i
-.PHONY : dataStructure/Queue.i
-
-# target to preprocess a source file
-dataStructure/Queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/Queue.cpp.i
-.PHONY : dataStructure/Queue.cpp.i
-
-dataStructure/Queue.s: dataStructure/Queue.cpp.s
-.PHONY : dataStructure/Queue.s
+app/main.s: app/main.cpp.s
+.PHONY : app/main.s
 
 # target to generate assembly for a file
-dataStructure/Queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/dataStructure/Queue.cpp.s
-.PHONY : dataStructure/Queue.cpp.s
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-model/Edge.o: model/Edge.cpp.o
-.PHONY : model/Edge.o
-
-# target to build an object file
-model/Edge.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/model/Edge.cpp.o
-.PHONY : model/Edge.cpp.o
-
-model/Edge.i: model/Edge.cpp.i
-.PHONY : model/Edge.i
-
-# target to preprocess a source file
-model/Edge.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/model/Edge.cpp.i
-.PHONY : model/Edge.cpp.i
-
-model/Edge.s: model/Edge.cpp.s
-.PHONY : model/Edge.s
-
-# target to generate assembly for a file
-model/Edge.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/model/Edge.cpp.s
-.PHONY : model/Edge.cpp.s
-
-model/Graph.o: model/Graph.cpp.o
-.PHONY : model/Graph.o
-
-# target to build an object file
-model/Graph.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/model/Graph.cpp.o
-.PHONY : model/Graph.cpp.o
-
-model/Graph.i: model/Graph.cpp.i
-.PHONY : model/Graph.i
-
-# target to preprocess a source file
-model/Graph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/model/Graph.cpp.i
-.PHONY : model/Graph.cpp.i
-
-model/Graph.s: model/Graph.cpp.s
-.PHONY : model/Graph.s
-
-# target to generate assembly for a file
-model/Graph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/model/Graph.cpp.s
-.PHONY : model/Graph.cpp.s
-
-model/Vertex.o: model/Vertex.cpp.o
-.PHONY : model/Vertex.o
-
-# target to build an object file
-model/Vertex.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/model/Vertex.cpp.o
-.PHONY : model/Vertex.cpp.o
-
-model/Vertex.i: model/Vertex.cpp.i
-.PHONY : model/Vertex.i
-
-# target to preprocess a source file
-model/Vertex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/model/Vertex.cpp.i
-.PHONY : model/Vertex.cpp.i
-
-model/Vertex.s: model/Vertex.cpp.s
-.PHONY : model/Vertex.s
-
-# target to generate assembly for a file
-model/Vertex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/model/Vertex.cpp.s
-.PHONY : model/Vertex.cpp.s
+app/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/app/main.cpp.s
+.PHONY : app/main.cpp.s
 
 parking/Car.o: parking/Car.cpp.o
 .PHONY : parking/Car.o
@@ -369,6 +225,174 @@ parking/ParkingLot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/parking/ParkingLot.cpp.s
 .PHONY : parking/ParkingLot.cpp.s
 
+scenicSpot/Graph.o: scenicSpot/Graph.cpp.o
+.PHONY : scenicSpot/Graph.o
+
+# target to build an object file
+scenicSpot/Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.o
+.PHONY : scenicSpot/Graph.cpp.o
+
+scenicSpot/Graph.i: scenicSpot/Graph.cpp.i
+.PHONY : scenicSpot/Graph.i
+
+# target to preprocess a source file
+scenicSpot/Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.i
+.PHONY : scenicSpot/Graph.cpp.i
+
+scenicSpot/Graph.s: scenicSpot/Graph.cpp.s
+.PHONY : scenicSpot/Graph.s
+
+# target to generate assembly for a file
+scenicSpot/Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.s
+.PHONY : scenicSpot/Graph.cpp.s
+
+scenicSpot/ScenicSpotEdge.o: scenicSpot/ScenicSpotEdge.cpp.o
+.PHONY : scenicSpot/ScenicSpotEdge.o
+
+# target to build an object file
+scenicSpot/ScenicSpotEdge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.o
+.PHONY : scenicSpot/ScenicSpotEdge.cpp.o
+
+scenicSpot/ScenicSpotEdge.i: scenicSpot/ScenicSpotEdge.cpp.i
+.PHONY : scenicSpot/ScenicSpotEdge.i
+
+# target to preprocess a source file
+scenicSpot/ScenicSpotEdge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.i
+.PHONY : scenicSpot/ScenicSpotEdge.cpp.i
+
+scenicSpot/ScenicSpotEdge.s: scenicSpot/ScenicSpotEdge.cpp.s
+.PHONY : scenicSpot/ScenicSpotEdge.s
+
+# target to generate assembly for a file
+scenicSpot/ScenicSpotEdge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.s
+.PHONY : scenicSpot/ScenicSpotEdge.cpp.s
+
+scenicSpot/ScenicSpotVertex.o: scenicSpot/ScenicSpotVertex.cpp.o
+.PHONY : scenicSpot/ScenicSpotVertex.o
+
+# target to build an object file
+scenicSpot/ScenicSpotVertex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotVertex.cpp.o
+.PHONY : scenicSpot/ScenicSpotVertex.cpp.o
+
+scenicSpot/ScenicSpotVertex.i: scenicSpot/ScenicSpotVertex.cpp.i
+.PHONY : scenicSpot/ScenicSpotVertex.i
+
+# target to preprocess a source file
+scenicSpot/ScenicSpotVertex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotVertex.cpp.i
+.PHONY : scenicSpot/ScenicSpotVertex.cpp.i
+
+scenicSpot/ScenicSpotVertex.s: scenicSpot/ScenicSpotVertex.cpp.s
+.PHONY : scenicSpot/ScenicSpotVertex.s
+
+# target to generate assembly for a file
+scenicSpot/ScenicSpotVertex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotVertex.cpp.s
+.PHONY : scenicSpot/ScenicSpotVertex.cpp.s
+
+utils/common/FileProcessor.o: utils/common/FileProcessor.cpp.o
+.PHONY : utils/common/FileProcessor.o
+
+# target to build an object file
+utils/common/FileProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/common/FileProcessor.cpp.o
+.PHONY : utils/common/FileProcessor.cpp.o
+
+utils/common/FileProcessor.i: utils/common/FileProcessor.cpp.i
+.PHONY : utils/common/FileProcessor.i
+
+# target to preprocess a source file
+utils/common/FileProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/common/FileProcessor.cpp.i
+.PHONY : utils/common/FileProcessor.cpp.i
+
+utils/common/FileProcessor.s: utils/common/FileProcessor.cpp.s
+.PHONY : utils/common/FileProcessor.s
+
+# target to generate assembly for a file
+utils/common/FileProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/common/FileProcessor.cpp.s
+.PHONY : utils/common/FileProcessor.cpp.s
+
+utils/common/Utils.o: utils/common/Utils.cpp.o
+.PHONY : utils/common/Utils.o
+
+# target to build an object file
+utils/common/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/common/Utils.cpp.o
+.PHONY : utils/common/Utils.cpp.o
+
+utils/common/Utils.i: utils/common/Utils.cpp.i
+.PHONY : utils/common/Utils.i
+
+# target to preprocess a source file
+utils/common/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/common/Utils.cpp.i
+.PHONY : utils/common/Utils.cpp.i
+
+utils/common/Utils.s: utils/common/Utils.cpp.s
+.PHONY : utils/common/Utils.s
+
+# target to generate assembly for a file
+utils/common/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/common/Utils.cpp.s
+.PHONY : utils/common/Utils.cpp.s
+
+utils/graph/Edge.o: utils/graph/Edge.cpp.o
+.PHONY : utils/graph/Edge.o
+
+# target to build an object file
+utils/graph/Edge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/graph/Edge.cpp.o
+.PHONY : utils/graph/Edge.cpp.o
+
+utils/graph/Edge.i: utils/graph/Edge.cpp.i
+.PHONY : utils/graph/Edge.i
+
+# target to preprocess a source file
+utils/graph/Edge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/graph/Edge.cpp.i
+.PHONY : utils/graph/Edge.cpp.i
+
+utils/graph/Edge.s: utils/graph/Edge.cpp.s
+.PHONY : utils/graph/Edge.s
+
+# target to generate assembly for a file
+utils/graph/Edge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/graph/Edge.cpp.s
+.PHONY : utils/graph/Edge.cpp.s
+
+utils/graph/Vertex.o: utils/graph/Vertex.cpp.o
+.PHONY : utils/graph/Vertex.o
+
+# target to build an object file
+utils/graph/Vertex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/graph/Vertex.cpp.o
+.PHONY : utils/graph/Vertex.cpp.o
+
+utils/graph/Vertex.i: utils/graph/Vertex.cpp.i
+.PHONY : utils/graph/Vertex.i
+
+# target to preprocess a source file
+utils/graph/Vertex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/graph/Vertex.cpp.i
+.PHONY : utils/graph/Vertex.cpp.i
+
+utils/graph/Vertex.s: utils/graph/Vertex.cpp.s
+.PHONY : utils/graph/Vertex.s
+
+# target to generate assembly for a file
+utils/graph/Vertex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/graph/Vertex.cpp.s
+.PHONY : utils/graph/Vertex.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -378,36 +402,39 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SenicSpotManagement"
-	@echo "... dataStructure/DoubleLinkedList.o"
-	@echo "... dataStructure/DoubleLinkedList.i"
-	@echo "... dataStructure/DoubleLinkedList.s"
-	@echo "... dataStructure/LinkedListNode.o"
-	@echo "... dataStructure/LinkedListNode.i"
-	@echo "... dataStructure/LinkedListNode.s"
-	@echo "... dataStructure/Node.o"
-	@echo "... dataStructure/Node.i"
-	@echo "... dataStructure/Node.s"
-	@echo "... dataStructure/Queue.o"
-	@echo "... dataStructure/Queue.i"
-	@echo "... dataStructure/Queue.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... model/Edge.o"
-	@echo "... model/Edge.i"
-	@echo "... model/Edge.s"
-	@echo "... model/Graph.o"
-	@echo "... model/Graph.i"
-	@echo "... model/Graph.s"
-	@echo "... model/Vertex.o"
-	@echo "... model/Vertex.i"
-	@echo "... model/Vertex.s"
+	@echo "... app/Menu.o"
+	@echo "... app/Menu.i"
+	@echo "... app/Menu.s"
+	@echo "... app/main.o"
+	@echo "... app/main.i"
+	@echo "... app/main.s"
 	@echo "... parking/Car.o"
 	@echo "... parking/Car.i"
 	@echo "... parking/Car.s"
 	@echo "... parking/ParkingLot.o"
 	@echo "... parking/ParkingLot.i"
 	@echo "... parking/ParkingLot.s"
+	@echo "... scenicSpot/Graph.o"
+	@echo "... scenicSpot/Graph.i"
+	@echo "... scenicSpot/Graph.s"
+	@echo "... scenicSpot/ScenicSpotEdge.o"
+	@echo "... scenicSpot/ScenicSpotEdge.i"
+	@echo "... scenicSpot/ScenicSpotEdge.s"
+	@echo "... scenicSpot/ScenicSpotVertex.o"
+	@echo "... scenicSpot/ScenicSpotVertex.i"
+	@echo "... scenicSpot/ScenicSpotVertex.s"
+	@echo "... utils/common/FileProcessor.o"
+	@echo "... utils/common/FileProcessor.i"
+	@echo "... utils/common/FileProcessor.s"
+	@echo "... utils/common/Utils.o"
+	@echo "... utils/common/Utils.i"
+	@echo "... utils/common/Utils.s"
+	@echo "... utils/graph/Edge.o"
+	@echo "... utils/graph/Edge.i"
+	@echo "... utils/graph/Edge.s"
+	@echo "... utils/graph/Vertex.o"
+	@echo "... utils/graph/Vertex.i"
+	@echo "... utils/graph/Vertex.s"
 .PHONY : help
 
 

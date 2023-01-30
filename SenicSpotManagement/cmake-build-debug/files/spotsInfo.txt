@@ -1,0 +1,13 @@
+Acadia  Maine  50  NO  YES
+Arches  Utah  80  NO  YES
+DeathValley  Nevada  90  YES  YES
+Glacier  Montana  100  YES  NO
+GrandCanyon  Arizona  80  NO  NO
+JoshuaTree  California  100  YES  NO
+MammothCave  Kentucky  70  YES  YES
+MesaVerde  Colorado  60  NO  YES
+Olympic  Washington  60  NO  YES
+Redwood  California  70  YES  YES
+Shenandoah  Virginia  70  YES  NO
+Yellowstone  Wyoming  90  NO  NO
+Yosemite  California  90  YES  YES
