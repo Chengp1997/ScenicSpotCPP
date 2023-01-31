@@ -3,18 +3,18 @@
 //
 
 #include "Edge.h"
-Edge::Edge(Vertex start, Vertex destination, int dis) {
-    this->startSpot = start;
-    this->destinationSpot = destination;
+Edge::Edge(string start, string destination, int dis) {
+    this->startSpotName = start;
+    this->destinationSpotName = destination;
     this->distance = dis;
 }
 
-void Edge::setStartSpot(Vertex start) {
-    this->startSpot = start;
+void Edge::setStartSpot(string start) {
+    this->startSpotName = start;
 }
 
-void Edge::setDestinationSpot(Vertex destination) {
-    this->destinationSpot = destination;
+void Edge::setDestinationSpot(string destination) {
+    this->destinationSpotName = destination;
 }
 
 void Edge::setDistance(int dis) {
@@ -25,10 +25,10 @@ int Edge::getDistance() const {
     return distance;
 }
 
-Vertex Edge::getDestinationSpot() {
-    return destinationSpot;
+string Edge::getDestinationSpot() {
+    return destinationSpotName;
 }
 
-Vertex Edge::getStartSpot() {
-    return startSpot;
+string Edge::getStartSpot() {
+    return startSpotName;
 }

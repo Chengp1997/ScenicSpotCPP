@@ -4,24 +4,25 @@
 
 #ifndef SENICSPOTMANAGEMENT_EDGE_H
 #define SENICSPOTMANAGEMENT_EDGE_H
-#include "Vertex.h"
+#include "string"
+using namespace std;
 
 class Edge {
 private:
     int distance;
-    Vertex startSpot;
-    Vertex destinationSpot;
+    string startSpotName;
+    string destinationSpotName;
 public:
-    explicit Edge(int dis = 0){distance = dis;};
-    Edge(Vertex start, Vertex destination, int distance = 0);
+    explicit Edge(int dis = 0){ distance = dis;};
+    Edge(string start, string destination, int distance = 0);
 
     int getDistance() const;
-    Vertex getStartSpot();
-    Vertex getDestinationSpot();
+    string getStartSpot();
+    string getDestinationSpot();
 
     void setDistance(int dis);
-    void setStartSpot(Vertex start);
-    void setDestinationSpot(Vertex destination);
+    void setStartSpot(string start);
+    void setDestinationSpot(string destination);
 };
 
 #endif //SENICSPOTMANAGEMENT_EDGE_H
