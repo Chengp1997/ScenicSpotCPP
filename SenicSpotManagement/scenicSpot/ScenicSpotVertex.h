@@ -13,18 +13,28 @@ private:
     int welcome;//how popular
     bool relaxPlace;//have relax place
     bool restRoom;//have restRoom
+
+    int popularRanking;
 public:
-    void setSpotName(string spotName);
-    void setIntro(string intro);
-    void setWelcome(int welcome);
-    void setRelaxPlace(bool relaxPlace);
-    void setRestRoom(bool restRoom);
+    explicit ScenicSpotVertex(string spotName = "NONAME",
+                     string intro = " ", int welcome = -1,
+                     bool relaxPlace = 1, bool restRoom = 1,
+                     int popularRanking = -1);
+    void setSpotName(string name);
+    void setIntro(string introInfo);
+    void setWelcome(int welcomeWeight);
+    void setRelaxPlace(bool hasRelaxPlace);
+    void setRestRoom(bool hasRestRoom);
+    void setPopularRanking(int ranking);
 
     string getSpotName();
     string getIntro();
-    int getWelcome();
-    bool hasRelaxPlace();
-    bool hasRestRoom();
+    int getWelcome() const;
+    bool hasRelaxPlace() const;
+    bool hasRestRoom() const;
+    int getPopularRanking() const;
+
+    void toString();
 };
 
 

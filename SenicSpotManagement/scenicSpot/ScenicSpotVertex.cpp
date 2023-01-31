@@ -4,24 +4,37 @@
 
 #include "ScenicSpotVertex.h"
 
-void ScenicSpotVertex::setSpotName(string spotName) {
+
+ScenicSpotVertex::ScenicSpotVertex(string spotName,
+                                   string intro, int welcome,
+                                   bool relaxPlace, bool restRoom,
+                                   int popularRanking) {
     this->spotName = spotName;
-}
-
-void ScenicSpotVertex::setIntro(string intro) {
     this->intro = intro;
-}
-
-void ScenicSpotVertex::setWelcome(int welcome) {
     this->welcome = welcome;
-}
-
-void ScenicSpotVertex::setRelaxPlace(bool relaxPlace) {
     this->relaxPlace = relaxPlace;
+    this->restRoom = restRoom;
+    this->popularRanking = popularRanking;
 }
 
-void ScenicSpotVertex::setRestRoom(bool restRoom) {
-    this->restRoom = restRoom;
+void ScenicSpotVertex::setSpotName(string name) {
+    this->spotName = name;
+}
+
+void ScenicSpotVertex::setIntro(string introInfo) {
+    this->intro = introInfo;
+}
+
+void ScenicSpotVertex::setWelcome(int welcomeWeight) {
+    this->welcome = welcomeWeight;
+}
+
+void ScenicSpotVertex::setRelaxPlace(bool hasRelaxPlace) {
+    this->relaxPlace = hasRelaxPlace;
+}
+
+void ScenicSpotVertex::setRestRoom(bool hasRestRoom) {
+    this->restRoom = hasRestRoom;
 }
 
 string ScenicSpotVertex::getSpotName() {
@@ -32,14 +45,33 @@ string ScenicSpotVertex::getIntro() {
     return intro;
 }
 
-int ScenicSpotVertex::getWelcome() {
+int ScenicSpotVertex::getWelcome() const {
     return welcome;
 }
 
-bool ScenicSpotVertex::hasRelaxPlace() {
+bool ScenicSpotVertex::hasRelaxPlace() const {
     return relaxPlace;
 }
 
-bool ScenicSpotVertex::hasRestRoom() {
+bool ScenicSpotVertex::hasRestRoom() const {
     return restRoom;
+}
+
+void ScenicSpotVertex::toString() {
+    cout<<"*********************************"<<endl;
+    cout<<"\tspot name: "<<spotName<<endl;
+    cout<<"\tStates: "<<intro<< endl;
+    cout<<"\tWelcome weight: "<< welcome<<endl;
+    cout<<"\tPopular ranking: "<< popularRanking<<endl;
+    cout<<"\tHas Relax Place: "<<relaxPlace<<endl;
+    cout<<"\tHas Rest Room: "<<restRoom<<endl;
+    cout<<"*********************************"<<endl;
+}
+
+void ScenicSpotVertex::setPopularRanking(int ranking) {
+    this->popularRanking = ranking;
+}
+
+int ScenicSpotVertex::getPopularRanking() const {
+    return popularRanking;
 }
