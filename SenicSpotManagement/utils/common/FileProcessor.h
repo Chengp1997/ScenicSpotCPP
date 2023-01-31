@@ -11,7 +11,7 @@ using namespace std;
 
 class FileProcessor {
 public:
-    static void readIn(string path);
+    static vector<string> readIn(const string& path);
     void writeTo();
 };
 

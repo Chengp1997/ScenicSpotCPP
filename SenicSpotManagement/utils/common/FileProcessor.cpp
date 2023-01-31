@@ -3,8 +3,9 @@
 //
 
 #include "FileProcessor.h"
+#include <vector>
 
-void FileProcessor::readIn(string path) {
+vector<string> FileProcessor::readIn(const string& path) {
 
     ifstream  infile;
     infile.open(path);
@@ -14,12 +15,15 @@ void FileProcessor::readIn(string path) {
         throw runtime_error("file open failed");
     }
 
+
+    vector<string> data;
     string text;
     while (getline(infile,text)){
-        cout<<text<<endl;
+        data.push_back(text);
+//        cout<<text<<endl;
     }
     infile.close();
-
+    return data;
 }
 
 void FileProcessor::writeTo() {
