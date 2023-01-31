@@ -5,8 +5,8 @@
 #ifndef SENICSPOTMANAGEMENT_VERTEX_H
 #define SENICSPOTMANAGEMENT_VERTEX_H
 #include "../dataStructure/LinkedList.h"
+#include "Edge.h"
 
-class Edge;
 class Vertex {
 private:
     LinkedList<Edge> edgeList;
