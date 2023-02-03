@@ -24,28 +24,29 @@ template<class T>
 class LinkedList {
 private:
     Node<T>* head;
-    int size;
+    int listSize;
 public:
     LinkedList(){
         head = new Node<T>;
-        size = 0;
+        listSize = 0;
     };
     LinkedList(T &val){
         head = new Node<T>(val);
-        size = 0;
+        listSize = 0;
     };
-    ~LinkedList(){clear();}
+//    ~LinkedList(){clear();}
     void clear();
 
     Node<T>* find(int index);
     T* get(int index);
-    void addFront(T val);
-    void addTail(T val);
-    void add(int index, T val);
+    void pushFront(T val);
+    void pushBack(T val);
+    void push(int index, T val);
+//    void push(int index,Node<T>* newNode);
     void removeFront();
     void removeTail();
     void remove(int index);
-    int length();
+    int size();
     void displayAll();
 
     bool isEmpty();
@@ -63,7 +64,7 @@ void LinkedList<T>::clear() {
 
 template<class T>
 Node<T> *LinkedList<T>::find(int index) {
-    if (index < 0 || index>=size)return NULL;
+    if (index < 0 || index >= listSize)return NULL;
     Node<T>* current = head;
     for(int i=0;i<index;i++){
         current = current->next;
@@ -79,22 +80,46 @@ T* LinkedList<T>::get(int index) {
 }
 
 template<class T>
-void LinkedList<T>::addFront(T val) {
-    add(0, val);
+void LinkedList<T>::pushFront(T val) {
+    push(0, val);
 }
 
 template<class T>
-void LinkedList<T>::addTail(T val) {
-    add(size,val);
+void LinkedList<T>::pushBack(T val) {
+    push(listSize, val);
 }
 
-template<class T>
-void LinkedList<T>::add(int index, T val) {
-    if(index<0||index>size) return;
+//template<class T>
+//void LinkedList<T>::push(int index, T &val) {
+//    if(index<0||index>listSize) return;
+//
+//    auto* newNode = new Node<T>(val);
+//    this->push(newNode);
+//    newNode = nullptr;
+//}
+//
+//template<class T>
+//void LinkedList<T>::push(int index,Node<T>* newNode) {
+//    Node<T>* current = head;
+//    if(index == 0){
+//        newNode->next = head;
+//        head = newNode;
+//    } else{
+//        for(int i=0;i<index-1;i++){
+//            current = current->next;
+//        }
+//        newNode->next = current->next;
+//        current->next = newNode;
+//    }
+//    listSize++;
+//}
 
+template<class T>
+void LinkedList<T>::push(int index, T val) {
+    if(index<0|| index > listSize) return;
+
+    auto* newNode = new Node<T>(val);
     Node<T>* current = head;
-    Node<T>* newNode = new Node<T>(val);
-    //insert at head
     if(index == 0){
         newNode->next = head;
         head = newNode;
@@ -105,8 +130,9 @@ void LinkedList<T>::add(int index, T val) {
         newNode->next = current->next;
         current->next = newNode;
     }
-    size++;
+    listSize++;
 }
+
 
 template<class T>
 void LinkedList<T>::removeFront() {
@@ -115,12 +141,12 @@ void LinkedList<T>::removeFront() {
 
 template<class T>
 void LinkedList<T>::removeTail() {
-    remove(length()-1);
+    remove(size() - 1);
 }
 
 template<class T>
 void LinkedList<T>::remove(int index) {
-    if(index<0||index>=size) return;
+    if(index<0|| index >= listSize) return;
 
     if(index == 0){
         Node<T>* nextNode = head->next;
@@ -135,12 +161,12 @@ void LinkedList<T>::remove(int index) {
         delete current->next;
         current->next = nextNode;
     }
-    size--;
+    listSize--;
 }
 
 template<class T>
-int LinkedList<T>::length() {
-    return size;
+int LinkedList<T>::size() {
+    return listSize;
 }
 
 template<class T>
@@ -156,7 +182,7 @@ void LinkedList<T>::displayAll() {
 }
 
 template<class T>
-bool LinkedList<T>::isEmpty() {return size==0;}
+bool LinkedList<T>::isEmpty() {return listSize == 0;}
 
 
 #endif //SENICSPOTMANAGEMENT_LINKEDLIST_H
