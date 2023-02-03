@@ -9,3 +9,15 @@ string Utils::getCurrentTime() {
     time(&rawtime);
     return ctime(&rawtime);
 }
+
+vector<string> Utils::split(const string& toSplit) {
+    char* s = new char[toSplit.size() + 1];
+    strcpy(s, toSplit.c_str());
+    char* p = strtok(s, " ");
+    vector<string> words;
+    while(p) {
+        words.push_back(p);
+        p = strtok(NULL, " ");
+    }
+    return words;
+}

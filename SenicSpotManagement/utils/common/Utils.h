@@ -4,6 +4,8 @@
 
 #ifndef SENICSPOTMANAGEMENT_UTILS_H
 #define SENICSPOTMANAGEMENT_UTILS_H
+#include <vector>
+#include <string>
 #include "iostream"
 using namespace std;
 
@@ -11,6 +13,7 @@ class Utils {
 
 public:
     static string getCurrentTime();
+    static vector<string> split(const string& toSplit);
 };
 
 
