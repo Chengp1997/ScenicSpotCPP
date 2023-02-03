@@ -4,6 +4,14 @@
 
 #include "Vertex.h"
 
-LinkedList<Edge> Vertex::getEdges() {
+vector<Edge*>* Vertex::getEdges() {
     return edgeList;
+}
+
+int Vertex::getIndex() {
+    return index;
+}
+
+void Vertex::setIndex(int i) {
+    this->index = i;
 }

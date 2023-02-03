@@ -6,14 +6,21 @@
 #define SENICSPOTMANAGEMENT_VERTEX_H
 #include "../dataStructure/LinkedList.h"
 #include "Edge.h"
+#include <vector>
 
 class Vertex {
 private:
-    LinkedList<Edge> edgeList;
+    int index;
+    vector<Edge*>* edgeList;
 public:
-    Vertex()= default;
+    Vertex(){
+        edgeList = new vector<Edge*>;
+        index = -1;
+    }
 
-    LinkedList<Edge> getEdges();
+    vector<Edge*>* getEdges();
+    int getIndex();
+    void setIndex(int i);
 };
 
 
