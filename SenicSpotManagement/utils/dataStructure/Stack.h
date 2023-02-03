@@ -14,7 +14,7 @@ class Stack {
 private:
     T *data; //array to store data
     int top; //top of the stack
-    int capacity;//the max size of the stack
+    int capacity;//the max listSize of the stack
 public:
     Stack(int size = SIZE);
     ~Stack();

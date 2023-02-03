@@ -6,22 +6,22 @@
 #define SENICSPOTMANAGEMENT_MENU_H
 
 #include "iostream"
-#include "../scenicSpot/Graph.h"
+#include "../scenicSpot/ScenicSpotGraph.h"
 using namespace std;
 class Menu {
 private:
-    static void dealChoice(int choice, Graph graph);
-    static void printMap(Graph graph);
-    static void searchSpot(Graph graph);
-    static void rankSpot(Graph graph);
-    static void findShortestPath(Graph graph);
-    static void spotGuidance(Graph graph);
-    static void printSpots(Graph graph);
-    static void printPath(Graph graph);
-    static void parkingRecord(Graph graph);
+    static void dealChoice(int choice, ScenicSpotGraph graph);
+    static void printMap(ScenicSpotGraph graph);
+    static void searchSpot(ScenicSpotGraph graph);
+    static void rankSpot(ScenicSpotGraph graph);
+    static void findShortestPath(ScenicSpotGraph graph);
+    static void spotGuidance(ScenicSpotGraph graph);
+    static void printSpots(ScenicSpotGraph graph);
+    static void printPath(ScenicSpotGraph graph);
+    static void parkingRecord(ScenicSpotGraph graph);
     static void exit();
 public:
-    [[noreturn]] static void printMenu(Graph graph);
+    [[noreturn]] static void printMenu(ScenicSpotGraph graph);
 };
 
 

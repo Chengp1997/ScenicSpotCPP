@@ -4,7 +4,7 @@
 
 #include "Menu.h"
 
-[[noreturn]] void Menu::printMenu(Graph graph){
+[[noreturn]] void Menu::printMenu(ScenicSpotGraph graph){
     while (true){
         cout<<"\t******************************"<<endl;
         cout<<"\t    welcome to our system     "<<endl;
@@ -27,7 +27,7 @@
 
 }
 
-void Menu::dealChoice(int choice, Graph graph) {
+void Menu::dealChoice(int choice, ScenicSpotGraph graph) {
     switch (choice) {
         case 1://print map
             printMap(graph);
@@ -62,43 +62,46 @@ void Menu::dealChoice(int choice, Graph graph) {
     }
 }
 
-
-void Menu::printMap(Graph graph) {
+void Menu::printMap(ScenicSpotGraph graph) {
     graph.printGraph();
 }
 
-void Menu::searchSpot(Graph graph) {
+void Menu::searchSpot(ScenicSpotGraph graph) {
     cout<< "Please input the name of the spot you want to search"<<endl;
     cout<<"(Enter E to exit)"<<endl;
+
     string name;
     cin>>name;
-//    if(name!="E"){
-//        graph
-//    }
-//    graph;
+
+    if(name!="E"){
+        ScenicSpotVertex* spotInfo = graph.searchSpot(name);
+        if (spotInfo == nullptr)
+            cout<<" No such spots, wrong input."<<endl;
+        spotInfo->toString();
+    }
 }
 
-void Menu::rankSpot(Graph graph) {
-
-}
-
-void Menu::findShortestPath(Graph graph) {
-
-}
-
-void Menu::spotGuidance(Graph graph) {
+void Menu::rankSpot(ScenicSpotGraph graph) {
 
 }
 
-void Menu::printSpots(Graph graph) {
+void Menu::findShortestPath(ScenicSpotGraph graph) {
 
 }
 
-void Menu::printPath(Graph graph) {
+void Menu::spotGuidance(ScenicSpotGraph graph) {
 
 }
 
-void Menu::parkingRecord(Graph graph) {
+void Menu::printSpots(ScenicSpotGraph graph) {
+
+}
+
+void Menu::printPath(ScenicSpotGraph graph) {
+
+}
+
+void Menu::parkingRecord(ScenicSpotGraph graph) {
 
 }
 

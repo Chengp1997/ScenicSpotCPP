@@ -15,7 +15,7 @@ using namespace std;
 
 class ParkingLot {
 private:
-    int size;//size of the parking lot
+    int size;//listSize of the parking lot
     Stack<Car> parkingSpace;
     Stack<Car> bufferStack;
     Queue<Car> waitingLine;

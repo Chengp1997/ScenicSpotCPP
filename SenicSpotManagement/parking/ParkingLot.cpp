@@ -54,8 +54,8 @@ void ParkingLot::leave(string carId) {
 
 void ParkingLot::showParkingLot() {
     cout<< "******showing current status*********"<<endl;
-    cout<< "***parking lot length: "<< parkingSpace.size()<<endl;
-    cout<< "***waiting line length: "<< waitingLine.size()<<endl;
-    cout<< "***buffer length: "<< bufferStack.size()<<endl;
+    cout<< "***parking lot size: "<< parkingSpace.size()<<endl;
+    cout<< "***waiting line size: "<< waitingLine.size()<<endl;
+    cout<< "***buffer size: "<< bufferStack.size()<<endl;
 }
 

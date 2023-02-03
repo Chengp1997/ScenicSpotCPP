@@ -12,10 +12,10 @@ template<class T>
 class Queue {
 private:
     T* data;//array to store the
-    int capacity; //max size of the queue
+    int capacity; //max listSize of the queue
     int front; //front pointer of the first element in the queue
     int rear; //rear pointer of the last element in the queue
-    int count; //size of the queue
+    int count; //listSize of the queue
 public:
     Queue(int size = SIZE);
     ~Queue();
