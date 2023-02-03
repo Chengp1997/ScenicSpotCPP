@@ -9,15 +9,46 @@ void ScenicSpotGraph::initGraph() {
     //read from file
     vector<string> spotInfo = FileProcessor::readIn(VertexPath);
     vector<string> edgeInfo = FileProcessor::readIn(EdgesPath);
-    //
-
-    toAdjacencyMatrix();
+    //read in the spot and edge information
+    initSpotsInfo(spotInfo);
+    initEdgeInfo(edgeInfo);
 }
 
+void ScenicSpotGraph::initSpotsInfo(const vector<string>& spotInfo) {
+    int index = 0;
+    for (const string& info: spotInfo) {
+        ScenicSpotVertex spot;
+        vector<string> words = Utils::split(info);
+
+        spot.setSpotName(words[0]);
+        spot.setIntro(words[1]);
+        spot.setWelcome(stoi(words[2]));
+        spot.setRelaxPlace(!(words[3] == "NO"));
+        spot.setRestRoom(!(words[4] == "NO"));
+        spot.setIndex(index++);
+
+        spotMap.insert(make_pair(spot.getSpotName(),spot));
+        nodes.pushBack(spot);
+    }
+}
+
+void ScenicSpotGraph::initEdgeInfo(const vector<string>& edgeInfo) {
+    for(const string& edge: edgeInfo){
+        vector<string> splitInfo =Utils::split(edge);
+        ScenicSpotVertex start = *searchSpot(splitInfo[0]);
+        ScenicSpotVertex des = *searchSpot(splitInfo[1]);
+        int distance = stoi(splitInfo[2]);
+        Edge* edgeSD = new Edge(start.getSpotName(),des.getSpotName(), distance);
+        Edge* edgeDS = new Edge(des.getSpotName(),start.getSpotName(), distance);
+
+        start.getEdges()->push_back(edgeSD);
+        des.getEdges()->push_back(edgeDS);
+    }
+}
 
 void ScenicSpotGraph::toAdjacencyMatrix() {
     //initialize adjacency matrix
-    int size = nodes.length();
+    int size = nodes.size();
     adjacencyMatrix = new int* [size];
     for (int i = 0; i < size; ++i) {
         adjacencyMatrix[i] = new int [size];
@@ -34,10 +65,11 @@ void ScenicSpotGraph::toAdjacencyMatrix() {
 
     //set distance between nodes
     for (int i = 0; i < size; ++i) {//for all nodes
-        Vertex vertex = * nodes.get(i);
-        for (int j = 0; j < vertex.getEdges().length(); ++j) {
-            Edge edge = * vertex.getEdges().get(i);
-            adjacencyMatrix[i][j] = edge.getDistance();
+        Vertex vertex =  *nodes.get(i);
+        for (auto & edge : *vertex.getEdges()) {
+            int distance =  edge->getDistance();
+            int pos = searchSpot(edge->getDestinationSpot())->getIndex();
+            adjacencyMatrix[i][pos] = distance;
         }
     }
 
@@ -45,38 +77,37 @@ void ScenicSpotGraph::toAdjacencyMatrix() {
 }
 
 void ScenicSpotGraph::printMatrix() {//print adjacency matrix
-    for (int i = 0; i < nodes.length(); ++i) {
+    cout<<"\t\t\t\t";
+    for (int i = 0; i < nodes.size(); ++i) {
         ScenicSpotVertex vertex = *nodes.get(i);
         cout<< vertex.getSpotName() <<"\t";
     }
     cout<<endl;
 
-    for(int i=0;i<nodes.length();i++){
+    for(int i=0;i<nodes.size();i++){
         ScenicSpotVertex vertex = *nodes.get(i);
-        for (int j = 0; j < vertex.getEdges().length(); ++j) {
-            if (j == 0) cout<< vertex.getSpotName()<< " ";
+        cout<< vertex.getSpotName()<< " \t\t\t";
+        for (int j = 0; j < nodes.size(); ++j) {
             cout<<adjacencyMatrix[i][j]<<"\t";
-            if(j == nodes.length()) cout<<endl;
         }
+        cout<<endl;
 
     }
 }
 
 void ScenicSpotGraph::printGraph() {
-
+    for (int i = 0; i < nodes.size(); ++i) {
+        ScenicSpotVertex spot = *nodes.get(i);
+        cout<<spot.getSpotName()<<"  ";
+        for (auto edge : *spot.getEdges()) {
+            cout<<"---"<<edge->getDistance()<<"--->"<<edge->getDestinationSpot()<<"\n\t\t";
+        }
+        cout<<endl;
+    }
 }
 
 ScenicSpotVertex* ScenicSpotGraph::searchSpot(const string& searchName) {
-    int index = -1;
-    for (int i = 0; i < nodes.length(); ++i) {
-        if (nodes.get(i)->getSpotName()==searchName){
-            index = i;
-            break;
-        }
-    }
-    if (index == -1) {
-        return nullptr;
-    }
-    ScenicSpotVertex* spot = nodes.get(index);
-    return spot;
+    auto iter = spotMap.find(searchName);
+    if(iter == spotMap.end()) return nullptr;
+    return &(iter->second);
 }
