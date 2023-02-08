@@ -5,12 +5,15 @@
 #ifndef SENICSPOTMANAGEMENT_MENU_H
 #define SENICSPOTMANAGEMENT_MENU_H
 
+#include <vector>
 #include "iostream"
 #include "../scenicSpot/ScenicSpotGraph.h"
+#include "../utils/algorithm/Sorting.h"
+
 using namespace std;
 class Menu {
 private:
-    static void dealChoice(int choice, ScenicSpotGraph graph);
+    static void dealChoice(int choice, const ScenicSpotGraph& graph);
     static void printMap(ScenicSpotGraph graph);
     static void searchSpot(ScenicSpotGraph graph);
     static void rankSpot(ScenicSpotGraph graph);
@@ -21,7 +24,7 @@ private:
     static void parkingRecord(ScenicSpotGraph graph);
     static void exit();
 public:
-    [[noreturn]] static void printMenu(ScenicSpotGraph graph);
+    [[noreturn]] static void printMenu(const ScenicSpotGraph& graph);
 };
 
 

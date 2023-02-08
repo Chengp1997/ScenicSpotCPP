@@ -4,7 +4,7 @@
 
 #include "Menu.h"
 
-[[noreturn]] void Menu::printMenu(ScenicSpotGraph graph){
+[[noreturn]] void Menu::printMenu(const ScenicSpotGraph& graph){
     while (true){
         cout<<"\t******************************"<<endl;
         cout<<"\t    welcome to our system     "<<endl;
@@ -27,7 +27,7 @@
 
 }
 
-void Menu::dealChoice(int choice, ScenicSpotGraph graph) {
+void Menu::dealChoice(int choice, const ScenicSpotGraph& graph) {
     switch (choice) {
         case 1://print map
             printMap(graph);
@@ -82,10 +82,31 @@ void Menu::searchSpot(ScenicSpotGraph graph) {
 }
 
 void Menu::rankSpot(ScenicSpotGraph graph) {
-
+    cout<<"Show popular ranking here"<<endl;
+    vector<ScenicSpotVertex> sorted;
+    LinkedList<ScenicSpotVertex> spots = graph.getSpots();
+    sorted.reserve(spots.size());
+    for(int i=0;i<spots.size();i++){
+        sorted.push_back(*spots.get(i));
+    }
+    Sorting::quickSort(sorted);
 }
 
 void Menu::findShortestPath(ScenicSpotGraph graph) {
+    cout<< "\t\t*****Please input your start spot:  ";
+    string begin;
+    cin>> begin;
+    ScenicSpotVertex* beginSpot = graph.searchSpot(begin);
+    cout<<"\t\t******Please input your end spot:   ";
+    string end;
+    cin>> end;
+    ScenicSpotVertex* endSpot = graph.searchSpot(end);
+    if (beginSpot== nullptr||endSpot == nullptr){
+        cout<<"\t\t wrong input, enter again";
+    }else{
+        cout<<"\t\tDijkstra:  ";
+
+    }
 
 }
 
