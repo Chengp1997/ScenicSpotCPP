@@ -160,10 +160,17 @@ void ShortestPath::printPath(vector<ScenicSpotVertex> roads, vector<int> distanc
 }
 
 void ShortestPath::findShortestRoad(const string& start, const string& des, ScenicSpotGraph graph) {
+    if (graph.searchSpot(start)== nullptr||graph.searchSpot(des) == nullptr){
+        cout<<"\t\t wrong input, enter again";
+        return;
+    }
     Vertex startSpot = *graph.searchSpot(start);
     Vertex endSpot = *graph.searchSpot(des);
 
+    cout<<"Dijkstra algorithm: "<<endl;
     Dijkstra(startSpot, endSpot, graph);
+    cout<<"Floyd algorithm: "<<endl;
+    Floyd(startSpot,endSpot, graph);
 }
 
 
