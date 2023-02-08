@@ -58,7 +58,7 @@ void ScenicSpotGraph::toAdjacencyMatrix() {
     //itself - 0
     for (int i = 0; i < size; ++i) {
         for (int j = 0; j < size; ++j) {
-            adjacencyMatrix[i][j] = 32767;
+            adjacencyMatrix[i][j] = INF;
             if (i == j) adjacencyMatrix[i][j] = 0;
         }
     }
@@ -73,7 +73,7 @@ void ScenicSpotGraph::toAdjacencyMatrix() {
         }
     }
 
-    printMatrix();
+//    printMatrix();
 }
 
 void ScenicSpotGraph::printMatrix() {//print adjacency matrix
@@ -110,4 +110,8 @@ ScenicSpotVertex* ScenicSpotGraph::searchSpot(const string& searchName) {
     auto iter = spotMap.find(searchName);
     if(iter == spotMap.end()) return nullptr;
     return &(iter->second);
+}
+
+LinkedList<ScenicSpotVertex> ScenicSpotGraph::getSpots() {
+    return nodes;
 }
