@@ -19,6 +19,21 @@ void ShortestPath::Floyd(Vertex start, Vertex end, ScenicSpotGraph graph) {
     }
 
     Floyd(path,distance,graph);
+
+    vector<ScenicSpotVertex> roads;
+    vector<int> totalDistance;
+    int current = des;
+    while (current != begin){
+        roads.insert(roads.begin(),*graph.getSpots().get(current));
+        totalDistance.insert(totalDistance.begin(), distance[current][begin]);
+        current = path[current][begin];
+    }
+
+    roads.insert(roads.begin(), *graph.getSpots().get(current));
+    totalDistance.insert(totalDistance.begin(), distance[current][begin]);
+
+    //print out result
+    printPath(roads,totalDistance);
 }
 
 /**
@@ -119,31 +134,34 @@ void ShortestPath::Dijkstra(Vertex start, Vertex end, ScenicSpotGraph graph) {
 
     int current = endIndex;
     vector<ScenicSpotVertex> roads;
+    vector<int> totalDistance;
     while (prev[current]!=-1){
         roads.insert(roads.begin(),*graph.getSpots().get(current));
+        totalDistance.insert(totalDistance.begin(), distance[current]);
         current = prev[current];
     }
     roads.insert(roads.begin(), *graph.getSpots().get(current));
+    totalDistance.insert(totalDistance.begin(), distance[current]);
 
     //print out result
-    printPath(roads,distance);
+    printPath(roads,totalDistance);
 }
 
-void ShortestPath::printPath(vector<ScenicSpotVertex> roads, int *distance) {
-    cout<< "shortest path from "<<
+void ShortestPath::printPath(vector<ScenicSpotVertex> roads, vector<int> distance) {
+    cout<< "\nshortest path from "<<
         roads.at(0).getSpotName()<<" to "<<
         roads.at(roads.size()-1).getSpotName()<<":  "<<endl;
-    for (auto & road : roads) {
-        if (distance[road.getIndex()] != 0) {
-            cout<<"-----total distance: "<<distance[road.getIndex()]<<"---->";
+    for (int i=0; i<roads.size();i++) {
+        if (i != 0) {
+            cout<<"-----total distance: "<<distance[i]<<"---->";
         }
-        cout<< road.getSpotName();
+        cout<< roads[i].getSpotName();
     }
 }
 
 void ShortestPath::findShortestRoad(const string& start, const string& des, ScenicSpotGraph graph) {
-    ScenicSpotVertex startSpot = *graph.searchSpot(start);
-    ScenicSpotVertex endSpot = *graph.searchSpot(des);
+    Vertex startSpot = *graph.searchSpot(start);
+    Vertex endSpot = *graph.searchSpot(des);
 
     Dijkstra(startSpot, endSpot, graph);
 }

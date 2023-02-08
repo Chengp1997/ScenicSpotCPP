@@ -14,7 +14,7 @@ private:
      static void Dijkstra(Vertex start, Vertex end, ScenicSpotGraph graph);
      static void Floyd(Vertex start, Vertex end, ScenicSpotGraph graph);
      static void Floyd(int** path, int** distance, ScenicSpotGraph graph);
-     static void printPath(vector<ScenicSpotVertex> roads, int distance[]);
+     static void printPath(vector<ScenicSpotVertex> roads, vector<int> distance);
 public:
      static void findShortestRoad(const string& start, const string& des, ScenicSpotGraph graph);
 };
