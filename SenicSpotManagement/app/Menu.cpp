@@ -3,6 +3,7 @@
 //
 
 #include "Menu.h"
+#include "../utils/algorithm/ShortestPath.h"
 
 [[noreturn]] void Menu::printMenu(const ScenicSpotGraph& graph){
     while (true){
@@ -96,18 +97,11 @@ void Menu::findShortestPath(ScenicSpotGraph graph) {
     cout<< "\t\t*****Please input your start spot:  ";
     string begin;
     cin>> begin;
-    ScenicSpotVertex* beginSpot = graph.searchSpot(begin);
     cout<<"\t\t******Please input your end spot:   ";
     string end;
     cin>> end;
-    ScenicSpotVertex* endSpot = graph.searchSpot(end);
-    if (beginSpot== nullptr||endSpot == nullptr){
-        cout<<"\t\t wrong input, enter again";
-    }else{
-        cout<<"\t\tDijkstra:  ";
 
-    }
-
+    ShortestPath::findShortestRoad(begin, end,graph);
 }
 
 void Menu::spotGuidance(ScenicSpotGraph graph) {
