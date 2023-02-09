@@ -112,16 +112,15 @@ void Menu::spotGuidance(ScenicSpotGraph graph) {
     cout<<"\t\tWe can give you a guidance of the trip"<<endl;
     cout<<"\t\tPlease input your current position"<<endl;
     cin>>start;
-    cout<<"\t\tDo you want to go back to the start point? Y/N: "<<endl;
-    string answer;
-    cin>>answer;
-    if (answer == "Y"){
-
-    }else{
-        cout<<"\t\t Please input the destination you wanna go: "<<endl;
-        cin>>end;
-
-
+    int* path = MST::hamiltonCircuit(graph);
+    if (path == nullptr){
+        cout<<"no hamilton circuit, here's our guidance for you to travel through all spots"<<endl;
+    } else{
+        for (int i = 0; i < graph.getSpots().size(); ++i) {
+            cout<<graph.getSpots().get(path[(i+ stoi(start))%graph.getSpots().size()]);
+            cout<<" --->  ";
+        }
+        cout<<endl;
     }
 }
 

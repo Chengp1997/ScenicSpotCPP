@@ -9,6 +9,7 @@
 #include "iostream"
 #include "../scenicSpot/ScenicSpotGraph.h"
 #include "../utils/algorithm/Sorting.h"
+#include "../utils/algorithm/MST.h"
 
 using namespace std;
 class Menu {
