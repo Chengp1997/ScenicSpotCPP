@@ -12,10 +12,11 @@
 class MST {
 private:
     static void prim(int start, ScenicSpotGraph graph);
-    void kruskal(ScenicSpotGraph graph);
     static void printPath(vector<ScenicSpotVertex> path, vector<int> sum);
+    static bool hamiltonCircuitDfs(int path[], bool used[], int step, ScenicSpotGraph graph);
 public:
     static void generateGuidance(const std::string& start, ScenicSpotGraph graph);
+    static int* hamiltonCircuit(ScenicSpotGraph graph);
 };
 
 

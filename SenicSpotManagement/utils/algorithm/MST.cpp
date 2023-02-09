@@ -78,8 +78,53 @@ void MST::printPath(vector<ScenicSpotVertex> path,vector<int> sum) {
     cout<<"\ntotal cost: "<<count<<endl;
 }
 
-void MST::kruskal(ScenicSpotGraph graph) {
-
+bool MST::hamiltonCircuitDfs(int *path, bool *used, int step, ScenicSpotGraph graph) {
+    if (step == graph.getSpots().size()){//already visited every spots
+        int lastSpot = path[step-1];
+        if (graph.adjacencyMatrix[lastSpot][0] > 0){ // can get back to 0 spot
+            return true;
+        }
+        return false;
+    }else{
+        for (int i = 0; i < graph.getSpots().size(); ++i) {
+            int lastSpot = path[step-1];
+            if (!used[i] && graph.adjacencyMatrix[lastSpot][i] > 0){
+                used[i] = true;
+                path[step] = i;
+                if (hamiltonCircuitDfs(path,used,step+1, graph))
+                    return true;
+                else{
+                    used[i] = false;
+                    path[step] = -1;
+                }
+            }
+        }
+    }
+    return false;
 }
+
+int* MST::hamiltonCircuit(ScenicSpotGraph graph) {
+    int size = graph.getSpots().size();
+    bool used[size];
+    int path[size];
+
+    //initialization
+    for (int i = 0; i < size; ++i) {
+        used[i] = false;
+        path[i] = -1;
+    }
+    //start from first spot
+    used[0] = true;
+    path[0] = 0;
+
+    bool hasCircuit = hamiltonCircuitDfs(path,used,1,graph);
+
+    if (hasCircuit){
+        return path;
+    }
+    return nullptr;
+}
+
+
 
 
