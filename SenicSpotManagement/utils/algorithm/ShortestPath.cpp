@@ -148,7 +148,7 @@ void ShortestPath::Dijkstra(Vertex start, Vertex end, ScenicSpotGraph graph) {
 }
 
 void ShortestPath::printPath(vector<ScenicSpotVertex> roads, vector<int> distance) {
-    cout<< "\nshortest path from "<<
+    cout<< "shortest path from "<<
         roads.at(0).getSpotName()<<" to "<<
         roads.at(roads.size()-1).getSpotName()<<":  "<<endl;
     for (int i=0; i<roads.size();i++) {
@@ -157,6 +157,7 @@ void ShortestPath::printPath(vector<ScenicSpotVertex> roads, vector<int> distanc
         }
         cout<< roads[i].getSpotName();
     }
+    cout<<endl;
 }
 
 void ShortestPath::findShortestRoad(const string& start, const string& des, ScenicSpotGraph graph) {
