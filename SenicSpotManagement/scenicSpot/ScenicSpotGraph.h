@@ -24,7 +24,6 @@ private:
     void initSpotsInfo(const vector<string>& spotInfo);
     void initEdgeInfo(const vector<string>& edgeInfo);
     void toAdjacencyMatrix();
-    void printMatrix();
 public:
     ScenicSpotGraph(){
         initGraph();
@@ -33,7 +32,9 @@ public:
 
     int** adjacencyMatrix{} ;
 
-    void printGraph();//print current adjacency matrix
+    void printMatrix();
+    void printSpots();
+    void printEdges();//print current adjacency matrix
     ScenicSpotVertex* searchSpot(const string& searchName);
     LinkedList<ScenicSpotVertex> getSpots();
 

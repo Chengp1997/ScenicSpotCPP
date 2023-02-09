@@ -76,6 +76,16 @@ void ScenicSpotGraph::toAdjacencyMatrix() {
 //    printMatrix();
 }
 
+ScenicSpotVertex* ScenicSpotGraph::searchSpot(const string& searchName) {
+    auto iter = spotMap.find(searchName);
+    if(iter == spotMap.end()) return nullptr;
+    return &(iter->second);
+}
+
+LinkedList<ScenicSpotVertex> ScenicSpotGraph::getSpots() {
+    return nodes;
+}
+
 void ScenicSpotGraph::printMatrix() {//print adjacency matrix
     cout<<"\t\t\t\t";
     for (int i = 0; i < nodes.size(); ++i) {
@@ -88,30 +98,32 @@ void ScenicSpotGraph::printMatrix() {//print adjacency matrix
         ScenicSpotVertex vertex = *nodes.get(i);
         cout<< vertex.getSpotName()<< " \t\t\t";
         for (int j = 0; j < nodes.size(); ++j) {
-            cout<<adjacencyMatrix[i][j]<<"\t";
+            cout<<adjacencyMatrix[i][j]<<"\t\t";
         }
         cout<<endl;
 
     }
 }
 
-void ScenicSpotGraph::printGraph() {
+void ScenicSpotGraph::printEdges() {
     for (int i = 0; i < nodes.size(); ++i) {
         ScenicSpotVertex spot = *nodes.get(i);
         cout<<spot.getSpotName()<<"  ";
         for (auto edge : *spot.getEdges()) {
             cout<<"---"<<edge->getDistance()<<"--->"<<edge->getDestinationSpot()<<"\n\t\t";
         }
-        cout<<endl;
     }
 }
 
-ScenicSpotVertex* ScenicSpotGraph::searchSpot(const string& searchName) {
-    auto iter = spotMap.find(searchName);
-    if(iter == spotMap.end()) return nullptr;
-    return &(iter->second);
+void ScenicSpotGraph::printSpots() {
+    cout<< "Here are the spots list of all scenic spots"<<endl;
+    cout<< "There are "<< nodes.size()<<" spots in our park";
+    cout<<"**************************"<<endl;
+    for (int i = 0; i < nodes.size(); ++i) {
+        if (i != 0) cout<<"-------------------------"<<endl;
+        cout<<i+1<<". "<<nodes.get(i)->getSpotName()<<endl;
+    }
+    cout<<"**************************"<<endl;
 }
 
-LinkedList<ScenicSpotVertex> ScenicSpotGraph::getSpots() {
-    return nodes;
-}
+
