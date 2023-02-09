@@ -3,6 +3,8 @@
 //
 
 #include "Menu.h"
+
+#include <utility>
 #include "../utils/algorithm/ShortestPath.h"
 
 [[noreturn]] void Menu::printMenu(const ScenicSpotGraph& graph){
@@ -64,7 +66,7 @@ void Menu::dealChoice(int choice, const ScenicSpotGraph& graph) {
 }
 
 void Menu::printMap(ScenicSpotGraph graph) {
-    graph.printGraph();
+    graph.printMatrix();
 }
 
 void Menu::searchSpot(ScenicSpotGraph graph) {
@@ -101,19 +103,44 @@ void Menu::findShortestPath(ScenicSpotGraph graph) {
     string end;
     cin>> end;
 
-    ShortestPath::findShortestRoad(begin, end,graph);
+    ShortestPath::findShortestRoad(begin, end,std::move(graph));
 }
 
 void Menu::spotGuidance(ScenicSpotGraph graph) {
+    string start;
+    string end;
+    cout<<"\t\tWe can give you a guidance of the trip"<<endl;
+    cout<<"\t\tPlease input your current position"<<endl;
+    cin>>start;
+    cout<<"\t\tDo you want to go back to the start point? Y/N: "<<endl;
+    string answer;
+    cin>>answer;
+    if (answer == "Y"){
 
+    }else{
+        cout<<"\t\t Please input the destination you wanna go: "<<endl;
+        cin>>end;
+
+
+    }
 }
 
 void Menu::printSpots(ScenicSpotGraph graph) {
+    graph.printSpots();
 
+    cout<<"print number to see detail or print E to exit:";
+    string number;
+    cin>>number;
+    if (number == "E")return;
+    if (stoi(number) > graph.getSpots().size()){
+        cout<<"wrong enter"<<endl;
+        return;
+    }
+    graph.getSpots().get(stoi(number) - 1)->toString();
 }
 
 void Menu::printPath(ScenicSpotGraph graph) {
-
+    graph.printEdges();
 }
 
 void Menu::parkingRecord(ScenicSpotGraph graph) {
@@ -121,7 +148,8 @@ void Menu::parkingRecord(ScenicSpotGraph graph) {
 }
 
 void Menu::exit() {
-
+    cout<<"Thank you for using our Scenic spot management system! Goodbye"<<endl;
+    ::exit(0);
 }
 
 
