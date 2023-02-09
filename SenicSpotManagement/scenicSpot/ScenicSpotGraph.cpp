@@ -98,7 +98,8 @@ void ScenicSpotGraph::printMatrix() {//print adjacency matrix
         ScenicSpotVertex vertex = *nodes.get(i);
         cout<< vertex.getSpotName()<< " \t\t\t";
         for (int j = 0; j < nodes.size(); ++j) {
-            cout<<adjacencyMatrix[i][j]<<"\t\t";
+            if (adjacencyMatrix[i][j] == INF) cout<< "INF\t";
+            else cout<<adjacencyMatrix[i][j]<<"\t";
         }
         cout<<endl;
 
