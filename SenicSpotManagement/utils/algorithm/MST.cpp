@@ -4,17 +4,10 @@
 
 #include "MST.h"
 
-void MST::generateGuidance(const std::string& start, ScenicSpotGraph graph) {
-    int startIndex = graph.searchSpot(start)->getIndex();
-    cout<<"using Prim algorithm: "<<endl;
-    prim(startIndex,graph);
-}
-
 void MST::prim(int start, ScenicSpotGraph graph) {
     int size = graph.getSpots().size();
     vector<ScenicSpotVertex> tree; // to store the minimum spanning tree
     int weights[size]; // to store the weights of the tree;
-    int index = 0;
 
     //initialization
     tree.push_back(*graph.getSpots().get(start)); //first node should be start
@@ -103,10 +96,9 @@ bool MST::hamiltonCircuitDfs(int *path, bool *used, int step, ScenicSpotGraph gr
     return false;
 }
 
-int* MST::hamiltonCircuit(ScenicSpotGraph graph) {
+bool MST::hamiltonCircuit(ScenicSpotGraph graph, int* path) {
     int size = graph.getSpots().size();
     bool used[size];
-    int path[size];
 
     //initialization
     for (int i = 0; i < size; ++i) {
@@ -118,11 +110,7 @@ int* MST::hamiltonCircuit(ScenicSpotGraph graph) {
     path[0] = 0;
 
     bool hasCircuit = hamiltonCircuitDfs(path,used,1,graph);
-
-    if (hasCircuit){
-        return path;
-    }
-    return nullptr;
+    return hasCircuit;
 }
 
 
