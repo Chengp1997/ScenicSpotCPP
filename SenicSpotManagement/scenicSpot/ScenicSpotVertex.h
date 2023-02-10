@@ -14,7 +14,6 @@ private:
     bool relaxPlace;//have relax place
     bool restRoom;//have restRoom
 
-    int popularRanking;
 public:
     explicit ScenicSpotVertex(string spotName = "NONAME",
                      string intro = " ", int welcome = -1,
@@ -25,14 +24,12 @@ public:
     void setWelcome(int welcomeWeight);
     void setRelaxPlace(bool hasRelaxPlace);
     void setRestRoom(bool hasRestRoom);
-    void setPopularRanking(int ranking);
 
     string getSpotName();
     string getIntro();
     int getWelcome() const;
     bool hasRelaxPlace() const;
     bool hasRestRoom() const;
-    int getPopularRanking() const;
 
     void toString();
 };

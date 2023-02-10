@@ -14,7 +14,6 @@ ScenicSpotVertex::ScenicSpotVertex(string spotName,
     this->welcome = welcome;
     this->relaxPlace = relaxPlace;
     this->restRoom = restRoom;
-    this->popularRanking = popularRanking;
 }
 
 void ScenicSpotVertex::setSpotName(string name) {
@@ -62,16 +61,8 @@ void ScenicSpotVertex::toString() {
     cout<<"\tspot name: "<<spotName<<endl;
     cout<<"\tStates: "<<intro<< endl;
     cout<<"\tWelcome weight: "<< welcome<<endl;
-    cout<<"\tPopular ranking: "<< popularRanking<<endl;
     cout<<"\tHas Relax Place: "<<relaxPlace<<endl;
     cout<<"\tHas Rest Room: "<<restRoom<<endl;
     cout<<"*********************************"<<endl;
 }
 
-void ScenicSpotVertex::setPopularRanking(int ranking) {
-    this->popularRanking = ranking;
-}
-
-int ScenicSpotVertex::getPopularRanking() const {
-    return popularRanking;
-}
