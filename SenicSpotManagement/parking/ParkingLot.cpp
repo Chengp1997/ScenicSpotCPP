@@ -9,7 +9,7 @@ ParkingLot::ParkingLot() {
 }
 ParkingLot::ParkingLot(int size) { this->size = size;}
 
-void ParkingLot::park(string carId) {
+void ParkingLot::park(const string& carId) {
     // check if already exist
     auto iter = record.find(carId);
     if ( iter!=record.end()){ //already exist
@@ -20,7 +20,6 @@ void ParkingLot::park(string carId) {
     }
 
     Car toEnter(carId);
-//    Car currCar = toEnter;
     //not in parking lot, enter!
     for(int i=0;i<parkingSpace.size();i++){
         //if parking lot is full
@@ -37,18 +36,61 @@ void ParkingLot::park(string carId) {
     }
     //record
     record.insert(std::make_pair(carId, toEnter));
+    showParkingLot();
 }
 
-void ParkingLot::leave(string carId) {
+void ParkingLot::leave(const string& carId) {
     //check if exist
     auto iter = record.find(carId);
     if ( iter!=record.end()){ //exist
         Car toGO = iter->second;
-        //in parking lot
+        //in parking lot //INLOT, OUTLOT, WAITING
+        if (toGO.getStatus() == Car::INLOT){
+            while (!parkingSpace.isEmpty()){
+                Car tempCar = parkingSpace.pop();
 
+                //leave the parking space
+                if (tempCar.getCarId() == toGO.getCarId()){//it's the one leaving
+                    tempCar.setEndTime(Utils::getCurrentTime());
+                    //push back
+                    while (!bufferStack.isEmpty()){
+                        Car temp = bufferStack.pop();
+                        parkingSpace.push(temp);
+                    }
+                    //set status to store in record
+                    tempCar.setStatus(Car::OUTLOT);
+                    record.insert(std::make_pair(carId,tempCar));
+
+                    cout<<"car "<<tempCar.getCarId()<<" is leaving the parkingLot"<<endl;
+                    cout<<"leaving time is: "<<tempCar.getEndTime()<<endl;
+
+                    break;
+                } else{
+                    bufferStack.push(tempCar);
+                }
+            }
+            //push the first car in waiting line in the parking lot if there is
+            if (!waitingLine.isEmpty()){
+                Car tempCar = waitingLine.poll();
+                tempCar.setStatus(Car::INLOT);
+                parkingSpace.push(tempCar);
+
+                record.insert(make_pair(carId,tempCar));
+
+                cout<<"car "<<tempCar.getCarId()<<" in waiting line is entering the parking log"<<endl;
+            }
+
+            showParkingLot();
+        } else if (toGO.getStatus() == Car::OUTLOT){
+            cout<<"*****error input, it's not in the parking lot"<<endl;
+        } else{
+            cout<<"*****error input, it's in line"<<endl;
+        }
+
+    }else{
+        cout<< "*******error input , No this car in record****"<<endl;
     }
 
-    cout<< "*******error input , no this car****"<<endl;
 
 }
 

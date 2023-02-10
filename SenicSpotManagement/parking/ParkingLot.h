@@ -24,8 +24,8 @@ private:
 public:
     ParkingLot();
     ParkingLot(int size);
-    void park(string carId);
-    void leave(string carId);
+    void park(const string& carId);
+    void leave(const string& carId);
     void showParkingLot();
 };
 
