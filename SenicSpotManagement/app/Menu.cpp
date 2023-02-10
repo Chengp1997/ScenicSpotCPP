@@ -7,7 +7,7 @@
 #include <utility>
 #include "../utils/algorithm/ShortestPath.h"
 
-[[noreturn]] void Menu::printMenu(const ScenicSpotGraph& graph){
+[[noreturn]] void Menu::printMenu(){
     while (true){
         cout<<"\t******************************"<<endl;
         cout<<"\t    welcome to our system     "<<endl;
@@ -25,36 +25,36 @@
         cout<<"\t Enter your choice: "<<endl;
         int choice;
         cin>>choice;
-        dealChoice(choice, graph);
+        dealChoice(choice);
     }
 
 }
 
-void Menu::dealChoice(int choice, const ScenicSpotGraph& graph) {
+void Menu::dealChoice(int choice) {
     switch (choice) {
         case 1://print map
-            printMap(graph);
+            printMap();
             break;
         case 2://search spot
-            searchSpot(graph);
+            searchSpot();
             break;
         case 3://spot ranking
-            rankSpot(graph);
+            rankSpot();
             break;
         case 4://find shortest path
-            findShortestPath(graph);
+            findShortestPath();
             break;
         case 5://travel with guide
-            spotGuidance(graph);
+            spotGuidance();
             break;
         case 6://spot lists
-            printSpots(graph);
+            printSpots();
             break;
         case 7://path lists
-            printPath(graph);
+            printPath();
             break;
         case 8://parking lot system
-            parkingRecord(graph);
+            printParkingMenu();
             break;
         case 9://Exit
             exit();
@@ -65,11 +65,11 @@ void Menu::dealChoice(int choice, const ScenicSpotGraph& graph) {
     }
 }
 
-void Menu::printMap(ScenicSpotGraph graph) {
+void Menu::printMap() {
     graph.printMatrix();
 }
 
-void Menu::searchSpot(ScenicSpotGraph graph) {
+void Menu::searchSpot() {
     cout<< "Please input the name of the spot you want to search"<<endl;
     cout<<"(Enter E to exit)"<<endl;
 
@@ -84,7 +84,7 @@ void Menu::searchSpot(ScenicSpotGraph graph) {
     }
 }
 
-void Menu::rankSpot(ScenicSpotGraph graph) {
+void Menu::rankSpot() {
     cout<<"Show popular ranking here"<<endl;
     vector<ScenicSpotVertex> sorted;
     LinkedList<ScenicSpotVertex> spots = graph.getSpots();
@@ -95,7 +95,7 @@ void Menu::rankSpot(ScenicSpotGraph graph) {
     Sorting::quickSort(sorted);
 }
 
-void Menu::findShortestPath(ScenicSpotGraph graph) {
+void Menu::findShortestPath() {
     cout<< "\t\t*****Please input your start spot:  ";
     string begin;
     cin>> begin;
@@ -106,7 +106,7 @@ void Menu::findShortestPath(ScenicSpotGraph graph) {
     ShortestPath::findShortestRoad(begin, end,std::move(graph));
 }
 
-void Menu::spotGuidance(ScenicSpotGraph graph) {
+void Menu::spotGuidance() {
     string start;
     string end;
     cout<<"\t\tWe can give you a guidance of the trip"<<endl;
@@ -124,7 +124,7 @@ void Menu::spotGuidance(ScenicSpotGraph graph) {
     }
 }
 
-void Menu::printSpots(ScenicSpotGraph graph) {
+void Menu::printSpots() {
     graph.printSpots();
 
     cout<<"print number to see detail or print E to exit:";
@@ -138,17 +138,42 @@ void Menu::printSpots(ScenicSpotGraph graph) {
     graph.getSpots().get(stoi(number) - 1)->toString();
 }
 
-void Menu::printPath(ScenicSpotGraph graph) {
+void Menu::printPath() {
     graph.printEdges();
-}
-
-void Menu::parkingRecord(ScenicSpotGraph graph) {
-
 }
 
 void Menu::exit() {
     cout<<"Thank you for using our Scenic spot management system! Goodbye"<<endl;
     ::exit(0);
 }
+
+void Menu::printParkingMenu() {
+    while (true){
+        cout<<"1. Park"<<endl;
+        cout<<"2. Leave "<<endl;
+        cout<<"3. check current parking lot status"<<endl;
+        cout<<"4. exit"<<endl;
+        int choice;
+        cin>>choice;
+        if (choice == 1){
+            cout<<"Please input your car plate"<<endl;
+            string carPlate;
+            cin>>carPlate;
+            parkingLot.park(carPlate);
+        } else if (choice == 2){
+            cout<<"Please input your car plate"<<endl;
+            string carPlate;
+            cin>>carPlate;
+            parkingLot.leave(carPlate);
+        } else if (choice == 3){
+            parkingLot.showParkingLot();
+        } else{
+            cout<<"Thank you for using our parking system"<<endl;
+            break;
+        }
+    }
+}
+
+
 
 
