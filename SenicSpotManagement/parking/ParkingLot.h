@@ -16,13 +16,19 @@ using namespace std;
 class ParkingLot {
 private:
     int size;//listSize of the parking lot
-    Stack<Car> parkingSpace;
-    Stack<Car> bufferStack;
-    Queue<Car> waitingLine;
-    map<string, Car> record;
+    Stack<Car*>* parkingSpace;
+    Stack<Car*>* bufferStack;
+    Queue<Car*>* waitingLine;
+    map<string, Car*>* record;
 
 public:
-    ParkingLot();
+    ParkingLot(){
+        this->size = 10;
+        parkingSpace = new Stack<Car*>(this->size);
+        bufferStack = new Stack<Car*>;
+        waitingLine = new Queue<Car*>;
+        record = new map<string, Car*>;
+    };
     ParkingLot(int size);
     void park(const string& carId);
     void leave(const string& carId);
