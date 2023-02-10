@@ -80,7 +80,9 @@ void Menu::searchSpot() {
         ScenicSpotVertex* spotInfo = graph.searchSpot(name);
         if (spotInfo == nullptr)
             cout<<" No such spots, wrong input."<<endl;
-        spotInfo->toString();
+        else{
+            spotInfo->toString();
+        }
     }
 }
 
@@ -93,6 +95,9 @@ void Menu::rankSpot() {
         sorted.push_back(*spots.get(i));
     }
     Sorting::quickSort(sorted);
+    for (int i = 0; i < sorted.size(); ++i) {
+        cout<<i+1<<". "<<sorted[i].getSpotName()<<endl;
+    }
 }
 
 void Menu::findShortestPath() {
@@ -102,22 +107,23 @@ void Menu::findShortestPath() {
     cout<<"\t\t******Please input your end spot:   ";
     string end;
     cin>> end;
-
+    if (begin == end) {
+        cout<<"same place, input again"<<endl;
+        return;
+    }
     ShortestPath::findShortestRoad(begin, end,std::move(graph));
 }
 
 void Menu::spotGuidance() {
-    string start;
-    string end;
     cout<<"\t\tWe can give you a guidance of the trip"<<endl;
-    cout<<"\t\tPlease input your current position"<<endl;
-    cin>>start;
-    int* path = MST::hamiltonCircuit(graph);
-    if (path == nullptr){
+
+    int *positions;
+    bool hasCircuit = MST::hamiltonCircuit(graph, positions);
+    if (!hasCircuit){
         cout<<"no hamilton circuit, here's our guidance for you to travel through all spots"<<endl;
     } else{
         for (int i = 0; i < graph.getSpots().size(); ++i) {
-            cout<<graph.getSpots().get(path[(i+ stoi(start))%graph.getSpots().size()]);
+            cout<<graph.getSpots().get(positions[i])->getSpotName();
             cout<<" --->  ";
         }
         cout<<endl;
