@@ -15,7 +15,7 @@ private:
     static void printPath(vector<ScenicSpotVertex> path, vector<int> sum);
     static bool hamiltonCircuitDfs(int path[], bool used[], int step, ScenicSpotGraph graph);
 public:
-    static bool hamiltonCircuit(ScenicSpotGraph graph, int path[]);
+    static void hamiltonCircuit(ScenicSpotGraph graph);
 };
 
 

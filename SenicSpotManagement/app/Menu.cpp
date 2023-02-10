@@ -116,18 +116,7 @@ void Menu::findShortestPath() {
 
 void Menu::spotGuidance() {
     cout<<"\t\tWe can give you a guidance of the trip"<<endl;
-
-    int *positions;
-    bool hasCircuit = MST::hamiltonCircuit(graph, positions);
-    if (!hasCircuit){
-        cout<<"no hamilton circuit, here's our guidance for you to travel through all spots"<<endl;
-    } else{
-        for (int i = 0; i < graph.getSpots().size(); ++i) {
-            cout<<graph.getSpots().get(positions[i])->getSpotName();
-            cout<<" --->  ";
-        }
-        cout<<endl;
-    }
+    MST::hamiltonCircuit(graph);
 }
 
 void Menu::printSpots() {

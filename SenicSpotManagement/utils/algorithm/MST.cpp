@@ -96,10 +96,10 @@ bool MST::hamiltonCircuitDfs(int *path, bool *used, int step, ScenicSpotGraph gr
     return false;
 }
 
-bool MST::hamiltonCircuit(ScenicSpotGraph graph, int* path) {
+void MST::hamiltonCircuit(ScenicSpotGraph graph) {
     int size = graph.getSpots().size();
     bool used[size];
-
+    int path[size];
     //initialization
     for (int i = 0; i < size; ++i) {
         used[i] = false;
@@ -110,7 +110,15 @@ bool MST::hamiltonCircuit(ScenicSpotGraph graph, int* path) {
     path[0] = 0;
 
     bool hasCircuit = hamiltonCircuitDfs(path,used,1,graph);
-    return hasCircuit;
+    if (!hasCircuit){
+        cout<<"no hamilton circuit, here's our guidance for you to travel through all spots"<<endl;
+    } else{
+        for (int i = 0; i < graph.getSpots().size(); ++i) {
+            cout<<graph.getSpots().get(path[i])->getSpotName();
+            cout<<" --->  ";
+        }
+        cout<<endl;
+    }
 }
 
 
