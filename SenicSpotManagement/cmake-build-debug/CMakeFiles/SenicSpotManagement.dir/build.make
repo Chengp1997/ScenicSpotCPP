@@ -170,35 +170,22 @@ CMakeFiles/SenicSpotManagement.dir/utils/common/FileProcessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SenicSpotManagement.dir/utils/common/FileProcessor.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/common/FileProcessor.cpp -o CMakeFiles/SenicSpotManagement.dir/utils/common/FileProcessor.cpp.s
 
-CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.o: CMakeFiles/SenicSpotManagement.dir/flags.make
-CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.o: ../scenicSpot/Graph.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.o -c /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/Graph.cpp
+CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.o: CMakeFiles/SenicSpotManagement.dir/flags.make
+CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.o: ../scenicSpot/ScenicSpotGraph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.o -c /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotGraph.cpp
 
-CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/Graph.cpp > CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.i
+CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotGraph.cpp > CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.i
 
-CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/Graph.cpp -o CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.s
-
-CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.o: CMakeFiles/SenicSpotManagement.dir/flags.make
-CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.o: ../scenicSpot/ScenicSpotEdge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.o -c /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotEdge.cpp
-
-CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotEdge.cpp > CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.i
-
-CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotEdge.cpp -o CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.s
+CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotGraph.cpp -o CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.s
 
 CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.o: CMakeFiles/SenicSpotManagement.dir/flags.make
 CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.o: ../app/Menu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.o -c /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/app/Menu.cpp
 
 CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.i: cmake_force
@@ -208,6 +195,45 @@ CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.i: cmake_force
 CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/app/Menu.cpp -o CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.s
+
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.o: CMakeFiles/SenicSpotManagement.dir/flags.make
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.o: ../utils/algorithm/Sorting.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.o -c /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/Sorting.cpp
+
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/Sorting.cpp > CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.i
+
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/Sorting.cpp -o CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.s
+
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.o: CMakeFiles/SenicSpotManagement.dir/flags.make
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.o: ../utils/algorithm/ShortestPath.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.o -c /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/ShortestPath.cpp
+
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/ShortestPath.cpp > CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.i
+
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/ShortestPath.cpp -o CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.s
+
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.o: CMakeFiles/SenicSpotManagement.dir/flags.make
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.o: ../utils/algorithm/MST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.o -c /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/MST.cpp
+
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/MST.cpp > CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.i
+
+CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/MST.cpp -o CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.s
 
 # Object files for target SenicSpotManagement
 SenicSpotManagement_OBJECTS = \
@@ -219,9 +245,11 @@ SenicSpotManagement_OBJECTS = \
 "CMakeFiles/SenicSpotManagement.dir/utils/common/Utils.cpp.o" \
 "CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotVertex.cpp.o" \
 "CMakeFiles/SenicSpotManagement.dir/utils/common/FileProcessor.cpp.o" \
-"CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.o" \
-"CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.o" \
-"CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.o"
+"CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.o" \
+"CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.o" \
+"CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.o" \
+"CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.o" \
+"CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.o"
 
 # External object files for target SenicSpotManagement
 SenicSpotManagement_EXTERNAL_OBJECTS =
@@ -234,12 +262,14 @@ SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/utils/graph/Edge.cpp.o
 SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/utils/common/Utils.cpp.o
 SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotVertex.cpp.o
 SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/utils/common/FileProcessor.cpp.o
-SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.o
-SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.o
+SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.o
 SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/app/Menu.cpp.o
+SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.o
+SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.o
+SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.o
 SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/build.make
 SenicSpotManagement: CMakeFiles/SenicSpotManagement.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable SenicSpotManagement"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable SenicSpotManagement"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SenicSpotManagement.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

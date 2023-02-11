@@ -101,22 +101,34 @@
 		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/parking/ParkingLot.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/Graph.cpp">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotGraph.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
-		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/Graph.h">
-			<Option target="SenicSpotManagement"/>
-		</Unit>
-		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotEdge.cpp">
-			<Option target="SenicSpotManagement"/>
-		</Unit>
-		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotEdge.h">
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotGraph.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
 		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotVertex.cpp">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
 		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/scenicSpot/ScenicSpotVertex.h">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/MST.cpp">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/MST.h">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/ShortestPath.cpp">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/ShortestPath.h">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/Sorting.cpp">
+			<Option target="SenicSpotManagement"/>
+		</Unit>
+		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/algorithm/Sorting.h">
 			<Option target="SenicSpotManagement"/>
 		</Unit>
 		<Unit filename="/Users/chengeping/Documents/LearningMaterial/Projects/ScenicSpotCPP/SenicSpotManagement/utils/common/FileProcessor.cpp">

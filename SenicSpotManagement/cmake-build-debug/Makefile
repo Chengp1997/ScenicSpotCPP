@@ -225,53 +225,29 @@ parking/ParkingLot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/parking/ParkingLot.cpp.s
 .PHONY : parking/ParkingLot.cpp.s
 
-scenicSpot/Graph.o: scenicSpot/Graph.cpp.o
-.PHONY : scenicSpot/Graph.o
+scenicSpot/ScenicSpotGraph.o: scenicSpot/ScenicSpotGraph.cpp.o
+.PHONY : scenicSpot/ScenicSpotGraph.o
 
 # target to build an object file
-scenicSpot/Graph.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.o
-.PHONY : scenicSpot/Graph.cpp.o
+scenicSpot/ScenicSpotGraph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.o
+.PHONY : scenicSpot/ScenicSpotGraph.cpp.o
 
-scenicSpot/Graph.i: scenicSpot/Graph.cpp.i
-.PHONY : scenicSpot/Graph.i
-
-# target to preprocess a source file
-scenicSpot/Graph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.i
-.PHONY : scenicSpot/Graph.cpp.i
-
-scenicSpot/Graph.s: scenicSpot/Graph.cpp.s
-.PHONY : scenicSpot/Graph.s
-
-# target to generate assembly for a file
-scenicSpot/Graph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/Graph.cpp.s
-.PHONY : scenicSpot/Graph.cpp.s
-
-scenicSpot/ScenicSpotEdge.o: scenicSpot/ScenicSpotEdge.cpp.o
-.PHONY : scenicSpot/ScenicSpotEdge.o
-
-# target to build an object file
-scenicSpot/ScenicSpotEdge.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.o
-.PHONY : scenicSpot/ScenicSpotEdge.cpp.o
-
-scenicSpot/ScenicSpotEdge.i: scenicSpot/ScenicSpotEdge.cpp.i
-.PHONY : scenicSpot/ScenicSpotEdge.i
+scenicSpot/ScenicSpotGraph.i: scenicSpot/ScenicSpotGraph.cpp.i
+.PHONY : scenicSpot/ScenicSpotGraph.i
 
 # target to preprocess a source file
-scenicSpot/ScenicSpotEdge.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.i
-.PHONY : scenicSpot/ScenicSpotEdge.cpp.i
+scenicSpot/ScenicSpotGraph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.i
+.PHONY : scenicSpot/ScenicSpotGraph.cpp.i
 
-scenicSpot/ScenicSpotEdge.s: scenicSpot/ScenicSpotEdge.cpp.s
-.PHONY : scenicSpot/ScenicSpotEdge.s
+scenicSpot/ScenicSpotGraph.s: scenicSpot/ScenicSpotGraph.cpp.s
+.PHONY : scenicSpot/ScenicSpotGraph.s
 
 # target to generate assembly for a file
-scenicSpot/ScenicSpotEdge.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotEdge.cpp.s
-.PHONY : scenicSpot/ScenicSpotEdge.cpp.s
+scenicSpot/ScenicSpotGraph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotGraph.cpp.s
+.PHONY : scenicSpot/ScenicSpotGraph.cpp.s
 
 scenicSpot/ScenicSpotVertex.o: scenicSpot/ScenicSpotVertex.cpp.o
 .PHONY : scenicSpot/ScenicSpotVertex.o
@@ -296,6 +272,78 @@ scenicSpot/ScenicSpotVertex.s: scenicSpot/ScenicSpotVertex.cpp.s
 scenicSpot/ScenicSpotVertex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/scenicSpot/ScenicSpotVertex.cpp.s
 .PHONY : scenicSpot/ScenicSpotVertex.cpp.s
+
+utils/algorithm/MST.o: utils/algorithm/MST.cpp.o
+.PHONY : utils/algorithm/MST.o
+
+# target to build an object file
+utils/algorithm/MST.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.o
+.PHONY : utils/algorithm/MST.cpp.o
+
+utils/algorithm/MST.i: utils/algorithm/MST.cpp.i
+.PHONY : utils/algorithm/MST.i
+
+# target to preprocess a source file
+utils/algorithm/MST.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.i
+.PHONY : utils/algorithm/MST.cpp.i
+
+utils/algorithm/MST.s: utils/algorithm/MST.cpp.s
+.PHONY : utils/algorithm/MST.s
+
+# target to generate assembly for a file
+utils/algorithm/MST.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/algorithm/MST.cpp.s
+.PHONY : utils/algorithm/MST.cpp.s
+
+utils/algorithm/ShortestPath.o: utils/algorithm/ShortestPath.cpp.o
+.PHONY : utils/algorithm/ShortestPath.o
+
+# target to build an object file
+utils/algorithm/ShortestPath.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.o
+.PHONY : utils/algorithm/ShortestPath.cpp.o
+
+utils/algorithm/ShortestPath.i: utils/algorithm/ShortestPath.cpp.i
+.PHONY : utils/algorithm/ShortestPath.i
+
+# target to preprocess a source file
+utils/algorithm/ShortestPath.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.i
+.PHONY : utils/algorithm/ShortestPath.cpp.i
+
+utils/algorithm/ShortestPath.s: utils/algorithm/ShortestPath.cpp.s
+.PHONY : utils/algorithm/ShortestPath.s
+
+# target to generate assembly for a file
+utils/algorithm/ShortestPath.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/algorithm/ShortestPath.cpp.s
+.PHONY : utils/algorithm/ShortestPath.cpp.s
+
+utils/algorithm/Sorting.o: utils/algorithm/Sorting.cpp.o
+.PHONY : utils/algorithm/Sorting.o
+
+# target to build an object file
+utils/algorithm/Sorting.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.o
+.PHONY : utils/algorithm/Sorting.cpp.o
+
+utils/algorithm/Sorting.i: utils/algorithm/Sorting.cpp.i
+.PHONY : utils/algorithm/Sorting.i
+
+# target to preprocess a source file
+utils/algorithm/Sorting.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.i
+.PHONY : utils/algorithm/Sorting.cpp.i
+
+utils/algorithm/Sorting.s: utils/algorithm/Sorting.cpp.s
+.PHONY : utils/algorithm/Sorting.s
+
+# target to generate assembly for a file
+utils/algorithm/Sorting.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SenicSpotManagement.dir/build.make CMakeFiles/SenicSpotManagement.dir/utils/algorithm/Sorting.cpp.s
+.PHONY : utils/algorithm/Sorting.cpp.s
 
 utils/common/FileProcessor.o: utils/common/FileProcessor.cpp.o
 .PHONY : utils/common/FileProcessor.o
@@ -414,15 +462,21 @@ help:
 	@echo "... parking/ParkingLot.o"
 	@echo "... parking/ParkingLot.i"
 	@echo "... parking/ParkingLot.s"
-	@echo "... scenicSpot/Graph.o"
-	@echo "... scenicSpot/Graph.i"
-	@echo "... scenicSpot/Graph.s"
-	@echo "... scenicSpot/ScenicSpotEdge.o"
-	@echo "... scenicSpot/ScenicSpotEdge.i"
-	@echo "... scenicSpot/ScenicSpotEdge.s"
+	@echo "... scenicSpot/ScenicSpotGraph.o"
+	@echo "... scenicSpot/ScenicSpotGraph.i"
+	@echo "... scenicSpot/ScenicSpotGraph.s"
 	@echo "... scenicSpot/ScenicSpotVertex.o"
 	@echo "... scenicSpot/ScenicSpotVertex.i"
 	@echo "... scenicSpot/ScenicSpotVertex.s"
+	@echo "... utils/algorithm/MST.o"
+	@echo "... utils/algorithm/MST.i"
+	@echo "... utils/algorithm/MST.s"
+	@echo "... utils/algorithm/ShortestPath.o"
+	@echo "... utils/algorithm/ShortestPath.i"
+	@echo "... utils/algorithm/ShortestPath.s"
+	@echo "... utils/algorithm/Sorting.o"
+	@echo "... utils/algorithm/Sorting.i"
+	@echo "... utils/algorithm/Sorting.s"
 	@echo "... utils/common/FileProcessor.o"
 	@echo "... utils/common/FileProcessor.i"
 	@echo "... utils/common/FileProcessor.s"
