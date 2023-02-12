@@ -33,7 +33,6 @@ void ParkingLot::park(const string& carId) {
             toEnter->setStartTime(Utils::getCurrentTime());
             toEnter->setStatus(Car::INLOT);
             parkingSpace->push(toEnter);
-            cout<<parkingSpace->size();
             cout << "******New car" + carId + "entered parking lot****" << endl;
         }
     //record

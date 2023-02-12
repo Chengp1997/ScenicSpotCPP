@@ -111,8 +111,9 @@ void ScenicSpotGraph::printEdges() {
         ScenicSpotVertex spot = *nodes.get(i);
         cout<<spot.getSpotName()<<"  ";
         for (auto edge : *spot.getEdges()) {
-            cout<<"---"<<edge->getDistance()<<"--->"<<edge->getDestinationSpot()<<"\n\t\t";
+            cout<<"\n\t\t---"<<edge->getDistance()<<"--->"<<edge->getDestinationSpot();
         }
+        cout<<endl;
     }
 }
 
