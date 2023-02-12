@@ -6,17 +6,17 @@
 #define SENICSPOTMANAGEMENT_STACK_H
 #include "iostream"
 using namespace std;
-//default capacity
-#define SIZE 10
 
 template<class T>
 class Stack {
+//default capacity
+#define STACKSIZE 10
 private:
     T *data; //array to store data
     int top; //top of the stack
     int capacity;//the max listSize of the stack
 public:
-    Stack(int size = SIZE);
+    explicit Stack(int size = STACKSIZE);
     ~Stack();
 
     void push(T val);

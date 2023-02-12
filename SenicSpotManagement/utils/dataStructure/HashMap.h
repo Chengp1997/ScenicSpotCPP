@@ -18,7 +18,7 @@ public:
     ~Entry(){}
 };
 
-#define SIZE 100
+#define QUEUESIZE 100
 template<class Key, class Value>
 class HashMap{
 private:

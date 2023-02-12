@@ -6,10 +6,10 @@
 #define SENICSPOTMANAGEMENT_QUEUE_H
 #include "iostream"
 using namespace std;
-#define SIZE 1000
 
 template<class T>
 class Queue {
+#define QUEUESIZE 1000
 private:
     T* data;//array to store the
     int capacity; //max listSize of the queue
@@ -17,7 +17,7 @@ private:
     int rear; //rear pointer of the last element in the queue
     int count; //listSize of the queue
 public:
-    Queue(int size = SIZE);
+    Queue(int size = QUEUESIZE);
     ~Queue();
 
     void offer(T val);
